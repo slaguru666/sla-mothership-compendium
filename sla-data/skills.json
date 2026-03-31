@@ -1,0 +1,64 @@
+{
+  "version": "0.4.0-ebb-core",
+  "source": "SLA_BRP.txt",
+  "skills": [
+    { "name": "SLA Info", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+
+    { "name": "Drive (Civilian)", "base": 20, "categoryRef": "Technical", "attributes": ["speed", "intellect"] },
+    { "name": "Drive (Military)", "base": 10, "categoryRef": "Technical", "attributes": ["speed", "intellect"] },
+    { "name": "Pilot", "base": 5, "categoryRef": "Technical", "attributes": ["speed", "intellect"] },
+
+    { "name": "Tech (Computers & AI)", "base": 10, "categoryRef": "Technical", "attributes": ["intellect"] },
+    { "name": "Tech (Electronics)", "base": 10, "categoryRef": "Technical", "attributes": ["intellect"] },
+    { "name": "Tech (Mechanical)", "base": 10, "categoryRef": "Technical", "attributes": ["intellect"] },
+    { "name": "Tech (Military)", "base": 5, "categoryRef": "Technical", "attributes": ["intellect"] },
+
+    { "name": "Bureaucracy", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Medical", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Psychology", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Tactics", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Computer Systems", "base": 10, "categoryRef": "Technical", "attributes": ["intellect"] },
+
+    { "name": "Persuade", "base": 15, "categoryRef": "Communication", "attributes": ["intellect"] },
+    { "name": "Fast Talk", "base": 10, "categoryRef": "Communication", "attributes": ["intellect"] },
+    { "name": "Intimidate", "base": 15, "categoryRef": "Communication", "attributes": ["intellect"] },
+    { "name": "Streetwise", "base": 10, "categoryRef": "Communication", "attributes": ["intellect"] },
+    { "name": "Command", "base": 15, "categoryRef": "Communication", "attributes": ["intellect"] },
+    { "name": "Craft (Specialty)", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+
+    { "name": "Spot Hidden", "base": 25, "categoryRef": "Perception", "attributes": ["speed", "intellect"] },
+    { "name": "Listen", "base": 25, "categoryRef": "Perception", "attributes": ["speed", "intellect"] },
+
+    { "name": "Athletics", "base": 15, "categoryRef": "Physical", "attributes": ["strength", "speed"] },
+    { "name": "Climb", "base": 20, "categoryRef": "Physical", "attributes": ["strength", "speed"] },
+    { "name": "Swim", "base": 20, "categoryRef": "Physical", "attributes": ["strength", "speed"] },
+    { "name": "Dodge", "base": 15, "categoryRef": "Physical", "attributes": ["speed"] },
+    { "name": "Stealth", "base": 10, "categoryRef": "Physical", "attributes": ["speed"] },
+
+    { "name": "Brawl", "base": 25, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
+    { "name": "Melee Blade 1H", "base": 20, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
+    { "name": "Melee Blade 2H", "base": 10, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
+    { "name": "Melee Club", "base": 20, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
+    { "name": "Melee Axe", "base": 15, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
+    { "name": "Throw", "base": 20, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength", "speed"] },
+    { "name": "Firearm (Pistol)", "base": 20, "categoryRef": "Combat", "combat": true, "attributes": ["combat"] },
+    { "name": "Firearm (Rifle/Shotgun)", "base": 25, "categoryRef": "Combat", "combat": true, "attributes": ["combat"] },
+    { "name": "Firearm (SMG)", "base": 15, "categoryRef": "Combat", "combat": true, "attributes": ["combat"] },
+    { "name": "Firearm (Auto/Support)", "base": 10, "categoryRef": "Combat", "combat": true, "attributes": ["combat"] },
+
+    { "name": "Biofeedback", "base": 5, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Formulate", "base": 5, "categoryRef": "Mental", "attributes": ["intellect"] },
+
+    { "name": "Ebb (Core)", "base": 10, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Ebb Awareness", "base": 5, "categoryRef": "Perception", "attributes": ["speed", "intellect"] },
+    { "name": "Ebb Blast", "base": 5, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "intellect"] },
+    { "name": "Ebb Thermal (Red)", "base": 5, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "intellect"] },
+    { "name": "Ebb Thermal (Blue)", "base": 5, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "intellect"] },
+    { "name": "Ebb Telekinesis", "base": 5, "categoryRef": "Mental", "attributes": ["strength", "intellect"] },
+    { "name": "Ebb Communicate", "base": 5, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Ebb Senses", "base": 5, "categoryRef": "Perception", "attributes": ["speed", "intellect"] },
+    { "name": "Ebb Protect", "base": 5, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Ebb Heal", "base": 5, "categoryRef": "Mental", "attributes": ["intellect"] },
+    { "name": "Ebb Reality Fold", "base": 5, "categoryRef": "Mental", "attributes": ["intellect"] }
+  ]
+}

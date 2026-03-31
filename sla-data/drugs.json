@@ -1,0 +1,440 @@
+{
+  "version": "0.3.1-draft5",
+  "source": "SLA Industries Drug System -> Mothership Conversion Notes",
+  "drugs": [
+    {
+      "id": "rush",
+      "name": "Rush",
+      "category": "Combat",
+      "rating": 5,
+      "cost": 50,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Rush.png",
+      "durationSeconds": 21600,
+      "durationLabel": "6 hours",
+      "activeSummary": "+10 Combat, +10 Speed, ignore one wound penalty per scene.",
+      "withdrawalSummary": "-5 Strength, -5 Body Save, -2 max Health per wound tier.",
+      "notes": [
+        "Standard Frother combat drug and common operative stimulant.",
+        "Each dose triggers a Body Save unless the user is a Frother."
+      ],
+      "addiction": {
+        "threshold": 4,
+        "saveDisadvantage": false,
+        "frotherExempt": true,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "combat": 10,
+          "speed": 10
+        },
+        "ignoreWoundPenaltyCount": 1
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "strength": -5,
+          "body": -5
+        },
+        "healthMaxPenaltyPerWoundTier": 2
+      }
+    },
+    {
+      "id": "ultra-violence",
+      "name": "Ultra Violence",
+      "category": "Combat",
+      "rating": 10,
+      "cost": 150,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/UV.png",
+      "durationSeconds": 43200,
+      "durationLabel": "12 hours",
+      "activeSummary": "+15 Combat, +10 Speed, Advantage on Combat checks, halve incoming damage.",
+      "withdrawalSummary": "-10 Strength, -10 Body Save, -1 max Wounds.",
+      "notes": [
+        "Legal only for heavily contracted corporate operatives.",
+        "On expiry, roll a Sanity Save; failure adds 1d5 Stress."
+      ],
+      "addiction": {
+        "threshold": 1,
+        "saveDisadvantage": true,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "combat": 15,
+          "speed": 10
+        },
+        "combatAdvantage": true,
+        "damageTakenMultiplier": 0.5
+      },
+      "expiry": {
+        "sanitySaveOnExpiry": true,
+        "stressFormulaOnFailure": "1d5"
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "strength": -10,
+          "body": -10
+        },
+        "woundMaxPenalty": 1
+      }
+    },
+    {
+      "id": "blaze-uv",
+      "name": "Blaze UV",
+      "category": "Combat",
+      "rating": 4,
+      "cost": 20,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/2nd try/Blaze UV.png",
+      "durationSeconds": 600,
+      "durationLabel": "10 minutes",
+      "activeSummary": "+15 Combat, +10 Speed, Advantage on Combat checks, halve incoming damage, +1 Stress on use.",
+      "withdrawalSummary": "Automatic -10 Strength crash for 3 hours.",
+      "notes": [
+        "Street-grade UV with a filthy comedown.",
+        "Frothers gain an additional +5 Combat while active."
+      ],
+      "addiction": {
+        "threshold": 1,
+        "saveDisadvantage": true,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 0
+      },
+      "effects": {
+        "statBonuses": {
+          "combat": 15,
+          "speed": 10
+        },
+        "combatAdvantage": true,
+        "damageTakenMultiplier": 0.5,
+        "stressOnUse": 1,
+        "frotherCombatBonus": 5
+      },
+      "withdrawal": {
+        "mode": "immediate",
+        "durationSeconds": 10800,
+        "statBonuses": {
+          "strength": -10
+        }
+      }
+    },
+    {
+      "id": "bass",
+      "name": "Bass",
+      "category": "Combat",
+      "rating": 4,
+      "cost": 30,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Redline.png",
+      "durationSeconds": 3600,
+      "durationLabel": "1 hour",
+      "activeSummary": "+10 Strength.",
+      "withdrawalSummary": "-5 Strength, -5 Speed.",
+      "notes": [
+        "Pure strength amplifier favored by heavy assault species.",
+        "Uses a hard crash profile if addiction sets in."
+      ],
+      "addiction": {
+        "threshold": 1,
+        "saveDisadvantage": true,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "strength": 10
+        }
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "strength": -5,
+          "speed": -5
+        }
+      }
+    },
+    {
+      "id": "cream",
+      "name": "Cream",
+      "category": "Combat",
+      "rating": 4,
+      "cost": 35,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Stimulant.png",
+      "durationSeconds": 3600,
+      "durationLabel": "1 hour",
+      "activeSummary": "+8 Speed, Advantage on ranged Combat checks.",
+      "withdrawalSummary": "-15 Speed for 3 hours.",
+      "notes": [
+        "Motor-control enhancer popular with shooters.",
+        "Non-Frothers gain +1 Stress on use."
+      ],
+      "addiction": {
+        "threshold": 1,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "speed": 8
+        },
+        "rangedCombatAdvantage": true,
+        "stressOnUse": 1,
+        "stressNonFrotherOnly": true
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": 10800,
+        "statBonuses": {
+          "speed": -15
+        }
+      }
+    },
+    {
+      "id": "beat",
+      "name": "Beat",
+      "category": "Soft",
+      "rating": 5,
+      "cost": 15,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Calmline.png",
+      "durationSeconds": 21600,
+      "durationLabel": "6 hours",
+      "activeSummary": "+8 Sanity Save, +5 Fear Save.",
+      "withdrawalSummary": "-5 Intellect, -5 Sanity Save.",
+      "notes": [
+        "A mild operative nerve stabilizer used to keep trauma manageable."
+      ],
+      "addiction": {
+        "threshold": 2,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "sanity": 8,
+          "fear": 5
+        }
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "intellect": -5,
+          "sanity": -5
+        }
+      }
+    },
+    {
+      "id": "flip",
+      "name": "Flip",
+      "category": "Soft",
+      "rating": 4,
+      "cost": 25,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/2nd try/Flip.png",
+      "durationSeconds": 10800,
+      "durationLabel": "3 hours",
+      "activeSummary": "+12 Sanity Save, +8 Fear Save.",
+      "withdrawalSummary": "-10 Sanity Save, -8 Fear Save for 6 hours.",
+      "notes": [
+        "An aggressive COOL amplifier used by trauma survivors and frontline operatives."
+      ],
+      "addiction": {
+        "threshold": 1,
+        "saveDisadvantage": true,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "sanity": 12,
+          "fear": 8
+        }
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": 21600,
+        "statBonuses": {
+          "sanity": -10,
+          "fear": -8
+        }
+      }
+    },
+    {
+      "id": "drum",
+      "name": "Drum",
+      "category": "Soft",
+      "rating": 4,
+      "cost": 40,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/2nd try/Drum.png",
+      "durationSeconds": 7200,
+      "durationLabel": "2 hours",
+      "activeSummary": "Restore full Flux if Ebb-capable and gain +5 Sanity Save for 2 hours.",
+      "withdrawalSummary": "-5 Intellect per withdrawal stage.",
+      "notes": [
+        "Only Ebb-capable species gain the Flux benefit.",
+        "Non-Ebb users still receive the Sanity bonus."
+      ],
+      "addiction": {
+        "threshold": 2,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "statBonuses": {
+          "sanity": 5
+        },
+        "restoreFlux": "full"
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "intellect": -5
+        }
+      }
+    },
+    {
+      "id": "alice",
+      "name": "Alice",
+      "category": "Soft",
+      "rating": 9,
+      "cost": 200,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/2nd try/Bubbles.png",
+      "durationSeconds": 0,
+      "durationLabel": "GM / scene duration",
+      "activeSummary": "+15 Intellect for Ebb-related checks. Mandatory Sanity Save on use; failure adds 1d10 Stress and a Panic Check.",
+      "withdrawalSummary": "No timed withdrawal. Long-term use causes permanent Intellect loss.",
+      "notes": [
+        "The vision content is intentionally GM-controlled.",
+        "After the first use, each additional dose permanently reduces Intellect by 5."
+      ],
+      "addiction": {
+        "threshold": 0,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 0
+      },
+      "effects": {
+        "statBonuses": {
+          "intellect": 15
+        }
+      },
+      "special": {
+        "aliceTrip": true,
+        "intellectPermanentAfterFirst": -5
+      }
+    },
+    {
+      "id": "decadence",
+      "name": "Decadence",
+      "category": "Soft",
+      "rating": 8,
+      "cost": 120,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Sedative.png",
+      "durationSeconds": 3600,
+      "durationLabel": "1 hour",
+      "activeSummary": "Target is incapacitated for the treatment period.",
+      "withdrawalSummary": "Permanent -5 Sanity Save and -5 Fear Save per addiction stage.",
+      "notes": [
+        "Used in trauma treatment and leaves the target in a chemical coma.",
+        "On expiry, remove 3 Stress."
+      ],
+      "addiction": {
+        "threshold": 5,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "incapacitated": true
+      },
+      "expiry": {
+        "stressRelief": 3
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "sanity": -5,
+          "fear": -5
+        },
+        "permanent": true
+      }
+    },
+    {
+      "id": "kickstart",
+      "name": "KickStart",
+      "category": "Medical",
+      "rating": 3,
+      "cost": 40,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Stimulant.png",
+      "durationSeconds": 18,
+      "durationLabel": "3 rounds delay",
+      "activeSummary": "Pending medical dose. On expiry, restore Health to the current wound tier maximum and heal 1 Wound.",
+      "withdrawalSummary": "-5 Body Save, -2 max Health per wound tier if addiction ever becomes relevant.",
+      "notes": [
+        "Emergency battlefield stabiliser with a short delayed onset.",
+        "Multiple doses can stack by queuing additional pending injections."
+      ],
+      "addiction": {
+        "threshold": 30,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {},
+      "special": {
+        "kickstartDelay": true,
+        "healHealthToMax": true,
+        "healWounds": 1
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "body": -5
+        },
+        "healthMaxPenaltyPerWoundTier": 2
+      }
+    },
+    {
+      "id": "pineal-stim",
+      "name": "Pineal Stim",
+      "category": "Medical",
+      "rating": 6,
+      "cost": 90,
+      "img": "systems/sla-mothership/images/sla-assets/Drugs/Stimulant.png",
+      "durationSeconds": 0,
+      "durationLabel": "Manual / enhancement support",
+      "activeSummary": "Double the duration of Flux-powered enhancement effects while active.",
+      "withdrawalSummary": "-5 Intellect, -2 max Flux, and weaker Ebb enhancement outcomes.",
+      "notes": [
+        "Prescription-only support chemical for Ebb Enhancement work."
+      ],
+      "addiction": {
+        "threshold": 3,
+        "saveDisadvantage": false,
+        "frotherExempt": false,
+        "withdrawalCheckSeconds": 86400
+      },
+      "effects": {
+        "doubleEbbDuration": true
+      },
+      "withdrawal": {
+        "mode": "addiction-check",
+        "durationSeconds": null,
+        "statBonuses": {
+          "intellect": -5
+        },
+        "fluxMaxPenalty": 2,
+        "ebbPowerPenalty": 1
+      }
+    }
+  ]
+}

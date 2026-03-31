@@ -1,0 +1,839 @@
+{
+  "categories": [
+    {
+      "key": "communications",
+      "title": "Communications Equipment",
+      "items": [
+        {
+          "name": "Headset Communicator",
+          "cost": "20c",
+          "weight": "0.1kg",
+          "power": "48hrs continuous",
+          "description": "Standard SLA encrypted short-range comms with bone-conduction mic/speaker.",
+          "stats": [
+            "Range: 5km urban / 15km open terrain",
+            "Encryption: Listen at -40% to intercept"
+          ],
+          "brp": "Enables squad coordination. +10% to cooperative Tactics rolls."
+        },
+        {
+          "name": "Klippo Multi-Band Communicator",
+          "cost": "150c",
+          "weight": "0.3kg",
+          "power": "72hrs",
+          "description": "Handheld or belt-mounted boosted comm unit with recording.",
+          "stats": [
+            "Range: 15km urban / 50km open terrain",
+            "Encryption: Listen at -60% to intercept"
+          ],
+          "brp": "Can patch into Third Eye feeds, Shiver channels, or public bands."
+        },
+        {
+          "name": "Vid-Phone (Portable)",
+          "cost": "80c",
+          "weight": "0.5kg",
+          "power": "24hrs",
+          "description": "Visual comm device for public/private/SLA channels with video recording.",
+          "stats": [
+            "Range: unlimited via network / 10km direct",
+            "Storage: 2hrs video"
+          ],
+          "brp": "Useful for remote briefings and evidence transmission."
+        },
+        {
+          "name": "Oyster Card (ITB Card)",
+          "cost": "5c",
+          "weight": "0.01kg",
+          "power": "Passive RFID",
+          "description": "ID, travel, and banking card with SCL, credits, permits, and biometrics.",
+          "stats": [
+            "Replacement fee after loss: 50c",
+            "Loss can trigger immediate SCL audit"
+          ],
+          "brp": "Required for official SLA transactions. Electronics (Computer) at -30% to hack."
+        },
+        {
+          "name": "Operative Organiser",
+          "cost": "100c",
+          "weight": "0.4kg",
+          "power": "168hrs",
+          "description": "Rugged PDA with BPN storage, maps, contacts, and tactical software.",
+          "stats": [
+            "Includes Downtown maps and transit schedules",
+            "Includes basic forensic software"
+          ],
+          "brp": "+10% to Navigate (Urban) and Research when consulting stored data."
+        },
+        {
+          "name": "BOOPA (Audio)",
+          "cost": "250c",
+          "weight": "0.6kg",
+          "power": "96hrs",
+          "description": "Advanced tactical audio suite with threat detection and directional awareness.",
+          "stats": [
+            "Range: 20km urban / 60km open terrain",
+            "Active filtering for sonic/flash effects"
+          ],
+          "brp": "+20% Listen, negates surprise from audio cues, halves flashbang/sonic effects."
+        }
+      ]
+    },
+    {
+      "key": "surveillance",
+      "title": "Surveillance & Detection Equipment",
+      "items": [
+        {
+          "name": "Environment Scanner (Standard)",
+          "cost": "300c",
+          "weight": "1.2kg",
+          "power": "48hrs",
+          "description": "Handheld multi-spectrum scanner for heat, chemicals, radiation, bio, and EM fields.",
+          "stats": [
+            "Range: 50m radius",
+            "Invisible/cloaked detection to 10m"
+          ],
+          "brp": "+30% Search for hidden targets/objects. Opposed Stealth for cloaked targets."
+        },
+        {
+          "name": "Environment Scanner (Advanced)",
+          "cost": "800c",
+          "weight": "1.5kg",
+          "power": "72hrs",
+          "description": "Military-grade scanner with composition analysis, motion tracking, and Ebb sensing.",
+          "stats": [
+            "Range: 100m radius / 500m targeted scan",
+            "Auto-detects Ebb use within 50m"
+          ],
+          "brp": "+40% Search. Can identify compounds/agents with no additional kit."
+        },
+        {
+          "name": "UV / Multi-Spectrum Torch",
+          "cost": "15c",
+          "weight": "0.3kg",
+          "power": "24hrs",
+          "description": "Compact weatherproof torch with white/UV/IR modes.",
+          "stats": [
+            "Beam: 50m white / 20m UV or IR"
+          ],
+          "brp": "UV reveals bio traces with Forensics. IR halves darkness penalties."
+        },
+        {
+          "name": "Binoculars (Standard)",
+          "cost": "30c",
+          "weight": "0.4kg",
+          "power": "N/A",
+          "description": "8x optical binoculars with waterproof body.",
+          "stats": [
+            "Effective observation to 500m"
+          ],
+          "brp": "Negates Spot range penalties up to 500m."
+        },
+        {
+          "name": "Binoculars (Tactical)",
+          "cost": "200c",
+          "weight": "0.8kg",
+          "power": "48hrs",
+          "description": "12x stabilized optics with IR/low-light, rangefinder, and laser designator.",
+          "stats": [
+            "Effective to 2000m",
+            "Exact distance output"
+          ],
+          "brp": "Negates Spot range penalties to 2000m. IR works in total darkness."
+        },
+        {
+          "name": "Motion Tracker",
+          "cost": "450c",
+          "weight": "1.0kg",
+          "power": "72hrs",
+          "description": "Vibration/thermal movement detector with direction and approximate distance.",
+          "stats": [
+            "Range: 50m radius",
+            "Poor through thick walls or vs stationary targets"
+          ],
+          "brp": "Auto-alerts movement in range. +20% to avoid ambush."
+        },
+        {
+          "name": "Forensic Kit",
+          "cost": "180c",
+          "weight": "2.5kg",
+          "power": "N/A",
+          "description": "Portable CSI suite with sample tools, reagents, bags, and analysis aids.",
+          "stats": [
+            "20 consumable uses included"
+          ],
+          "brp": "Required for detailed Forensics; otherwise -30%."
+        },
+        {
+          "name": "Lockpick Set (Professional)",
+          "cost": "50c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "Professional mechanical picks, tension tools, and bypass hardware.",
+          "stats": [
+            "Removes improvised lockpicking penalties"
+          ],
+          "brp": "Required for Locksmith rolls without penalty; improvised tools impose -20%."
+        },
+        {
+          "name": "Electronic Lockpick / Bypass Kit",
+          "cost": "300c",
+          "weight": "0.5kg",
+          "power": "24hrs",
+          "description": "Electronic lock override, keycard cloning, and cipher bypass suite.",
+          "stats": [
+            "+10% Electronics (Security) for electronic lock defeat",
+            "Military-grade SLA locks may still require specialist access"
+          ],
+          "brp": "Primary toolkit for electronic breach work."
+        }
+      ]
+    },
+    {
+      "key": "medical",
+      "title": "Medical Equipment",
+      "items": [
+        {
+          "name": "BOOPA Medical Kit (Standard)",
+          "cost": "50c",
+          "weight": "1.5kg",
+          "power": "N/A",
+          "description": "Field first-aid set with bandages, antiseptics, coagulants, and hypo tools.",
+          "stats": [
+            "Supplies for 10 treatments",
+            "Includes KickStart and Splatter doses"
+          ],
+          "brp": "Required for First Aid without penalty. KickStart restores 1d3 HP."
+        },
+        {
+          "name": "BOOPA Medical Kit (Advanced)",
+          "cost": "250c",
+          "weight": "3.0kg",
+          "power": "48hrs diagnostics",
+          "description": "Enhanced trauma and surgical field kit with scanner/defib/monitoring tools.",
+          "stats": [
+            "Supplies for 20 treatments",
+            "Includes KickStart, Splatter, and Bosh doses"
+          ],
+          "brp": "Required for Medicine without penalty. +10% to First Aid and Medicine."
+        },
+        {
+          "name": "Medikit (Disposable Emergency)",
+          "cost": "10c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Single-use emergency pack with stimulant and coagulant patch.",
+          "stats": [
+            "Single use"
+          ],
+          "brp": "Allows First Aid at -10%. Restores 1d3 HP."
+        },
+        {
+          "name": "Trauma Stabiliser",
+          "cost": "400c",
+          "weight": "5.0kg",
+          "power": "12hrs",
+          "description": "Portable life-support unit for critically injured casualties.",
+          "stats": [
+            "Includes oxygen, IV, and vital monitors"
+          ],
+          "brp": "Auto-stabilises dying characters for 12 hours; Medicine roll to apply optimally."
+        },
+        {
+          "name": "Drug Hypo-Spray (Empty)",
+          "cost": "5c",
+          "weight": "0.1kg",
+          "power": "N/A",
+          "description": "Reusable painless delivery system for one drug dose.",
+          "stats": [
+            "Holds 1 dose"
+          ],
+          "brp": "Administer one dose as a simple combat action."
+        }
+      ]
+    },
+    {
+      "key": "exploration",
+      "title": "Climbing & Exploration Gear",
+      "items": [
+        {
+          "name": "Grapple Gun",
+          "cost": "120c",
+          "weight": "2.0kg",
+          "power": "24 shots",
+          "description": "Pneumatic launcher with 50m monofilament line and hook options.",
+          "stats": [
+            "Line tensile strength: 500kg",
+            "Setup time: 1 combat round"
+          ],
+          "brp": "+20% Climb with secured line. Line breaks on 10+ damage hit."
+        },
+        {
+          "name": "Climbing Harness & Gear",
+          "cost": "40c",
+          "weight": "1.5kg",
+          "power": "N/A",
+          "description": "Full harness kit with ascenders, descenders, gloves, and support hardware.",
+          "stats": [
+            "Field climbing standard"
+          ],
+          "brp": "Required for serious climbing; without it Climb at -20%."
+        },
+        {
+          "name": "Rope (50m, High-Tensile)",
+          "cost": "20c",
+          "weight": "3.0kg",
+          "power": "N/A",
+          "description": "Military climbing rope, weatherproof and squad-capable.",
+          "stats": [
+            "Tensile strength: 800kg"
+          ],
+          "brp": "+10% Climb with proper rope support."
+        },
+        {
+          "name": "Maghold Boots",
+          "cost": "80c",
+          "weight": "2.0kg",
+          "power": "48hrs battery / 8hrs continuous use",
+          "description": "Electromagnetic boots for ferrous walls and ceilings.",
+          "stats": [
+            "Metal surfaces only",
+            "Movement rate halved while active"
+          ],
+          "brp": "Auto-success Climb on metal surfaces."
+        },
+        {
+          "name": "Maghold Gloves",
+          "cost": "60c",
+          "weight": "0.5kg",
+          "power": "48hrs battery / 8hrs continuous use",
+          "description": "Electromagnetic palm pads for metallic climbing and gear anchoring.",
+          "stats": [
+            "Attach up to 50kg to ferrous surfaces"
+          ],
+          "brp": "+30% Climb on metal surfaces."
+        }
+      ]
+    },
+    {
+      "key": "tools",
+      "title": "Tools & Utility Gear",
+      "items": [
+        {
+          "name": "MAC Knife (Multi-Application Cutting Tool)",
+          "cost": "15c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Heavy-duty folding tool with ceramic blade, cutter, breaker, and pry attachments.",
+          "stats": [
+            "Improvised damage: 1d4, AP 1"
+          ],
+          "brp": "Common requirement for Craft/Repair tasks in the field."
+        },
+        {
+          "name": "Entrenching Tool",
+          "cost": "12c",
+          "weight": "1.0kg",
+          "power": "N/A",
+          "description": "Folding shovel/pick combo for digging, rubble clearing, and breaching weak cover.",
+          "stats": [
+            "Improvised damage: 1d6+db"
+          ],
+          "brp": "Supports fast fieldworks and emergency breaching."
+        },
+        {
+          "name": "Tool Kit (General)",
+          "cost": "60c",
+          "weight": "4.0kg",
+          "power": "N/A",
+          "description": "Comprehensive field repair kit for mechanical fixes.",
+          "stats": [
+            "Assorted hand tools, fasteners, tapes, and adhesives"
+          ],
+          "brp": "Required for Craft (Mechanical)/Repair without penalty. Improvised tools: -30%."
+        },
+        {
+          "name": "Tool Kit (Electronics)",
+          "cost": "100c",
+          "weight": "2.0kg",
+          "power": "N/A",
+          "description": "Precision electronics tool set for diagnostics and component work.",
+          "stats": [
+            "Includes multimeter, solder tools, testers, and parts"
+          ],
+          "brp": "Required for Electronics specialities without penalty."
+        },
+        {
+          "name": "Breaching Charge (Frame Charge)",
+          "cost": "80c per charge",
+          "weight": "1.5kg",
+          "power": "N/A",
+          "description": "Adhesive shaped charge with timer/remote detonation for entry operations.",
+          "stats": [
+            "Blast: 6d6 in 3m radius",
+            "Focused breach: 10d6 in 1m area"
+          ],
+          "brp": "Demolitions roll for placement. Standard doors/walls breach automatically."
+        },
+        {
+          "name": "Padlock (Heavy Duty)",
+          "cost": "8c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Hardened steel padlock resistant to cutting and routine bypass attempts.",
+          "stats": [
+            "Locksmith at -20% to pick",
+            "STR 25+ with tools to force"
+          ],
+          "brp": "Reliable low-cost field lock for temporary site security."
+        },
+        {
+          "name": "Duct Tape (Roll)",
+          "cost": "2c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "High-strength adhesive tape, 50m roll.",
+          "stats": [
+            "Improvised restraints: STR vs STR+10 to break"
+          ],
+          "brp": "Useful for temporary repairs, restraints, and improvised field solutions."
+        },
+        {
+          "name": "Cable Ties (Pack of 50)",
+          "cost": "5c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "Heavy-duty non-metallic restraint ties.",
+          "stats": [
+            "Break free: STR vs 15 (single attempt)"
+          ],
+          "brp": "Fast detainee handling and bundling utility."
+        },
+        {
+          "name": "Flares (Pack of 6)",
+          "cost": "10c",
+          "weight": "0.5kg",
+          "power": "N/A",
+          "description": "Weatherproof chemical flares for illumination, marking, and signalling.",
+          "stats": [
+            "Burn time: 30 minutes",
+            "Light radius: 50m"
+          ],
+          "brp": "Reliable light source and route marker in low-visibility operations."
+        }
+      ]
+    },
+    {
+      "key": "personal",
+      "title": "Personal Field Equipment",
+      "items": [
+        {
+          "name": "Backpack (Operative Issue)",
+          "cost": "15c",
+          "weight": "0.5kg empty",
+          "power": "N/A",
+          "description": "Waterproof modular military pack.",
+          "stats": [
+            "Capacity: 30kg"
+          ],
+          "brp": "Carries major load without extra encumbrance penalties up to capacity."
+        },
+        {
+          "name": "Webbing / Tactical Vest",
+          "cost": "25c",
+          "weight": "1.0kg empty",
+          "power": "N/A",
+          "description": "Load-bearing vest with utility pouches and mount points.",
+          "stats": [
+            "Capacity: 10kg quick-access gear"
+          ],
+          "brp": "Reload actions take half time with properly arranged ammunition."
+        },
+        {
+          "name": "Sleeping Bag (Thermal)",
+          "cost": "20c",
+          "weight": "1.5kg",
+          "power": "N/A",
+          "description": "Insulated bag rated to -20C with waterproof shell.",
+          "stats": [
+            "Cold-weather sustainment"
+          ],
+          "brp": "Prevents cold/wet rest penalties during field downtime."
+        },
+        {
+          "name": "Ration Pack (1 Week)",
+          "cost": "15c",
+          "weight": "3.0kg",
+          "power": "N/A",
+          "description": "High-calorie long shelf-life field food for one operative (7 days).",
+          "stats": [
+            "Single-op weekly sustainment"
+          ],
+          "brp": "Prevents starvation. Morale impacts are GM discretion."
+        },
+        {
+          "name": "Water Purification Tablets (50)",
+          "cost": "5c",
+          "weight": "0.1kg",
+          "power": "N/A",
+          "description": "Chemical water purification tablets.",
+          "stats": [
+            "1 tablet purifies 1 litre"
+          ],
+          "brp": "Prevents disease from dirty water; does not remove heavy toxins/radiological contamination."
+        },
+        {
+          "name": "Canteen (2 Litre)",
+          "cost": "3c",
+          "weight": "0.3kg empty / 2.3kg full",
+          "power": "N/A",
+          "description": "Durable water container with carry strap.",
+          "stats": [
+            "2L volume"
+          ],
+          "brp": "Supports hydration: roughly 1 day normal use, half-day in extreme heat/exertion."
+        }
+      ]
+    },
+    {
+      "key": "specialist",
+      "title": "Specialist Equipment",
+      "items": [
+        {
+          "name": "Ebb Damper",
+          "cost": "600c",
+          "weight": "0.8kg",
+          "power": "48hrs",
+          "description": "Localized Ebb suppression field generator.",
+          "stats": [
+            "Radius: 5m",
+            "Detectable by scanners at double range"
+          ],
+          "brp": "All Ebb rolls in radius at -30%, including the user's own Ebb rolls."
+        },
+        {
+          "name": "Power Cell (Standard)",
+          "cost": "10c",
+          "weight": "0.3kg",
+          "power": "24hrs typical load",
+          "description": "Rechargeable universal power cell.",
+          "stats": [
+            "Hot-swappable in most field gear"
+          ],
+          "brp": "Baseline backup power source."
+        },
+        {
+          "name": "Power Cell (Extended)",
+          "cost": "25c",
+          "weight": "0.6kg",
+          "power": "72hrs typical load",
+          "description": "High-capacity universal power cell.",
+          "stats": [
+            "Extended operation support"
+          ],
+          "brp": "Critical for long missions without resupply."
+        },
+        {
+          "name": "Recharge Station (Portable)",
+          "cost": "150c",
+          "weight": "2.0kg",
+          "power": "Mains or generator required",
+          "description": "Portable charging station for up to 4 cells at once.",
+          "stats": [
+            "4 cells / 4 hours"
+          ],
+          "brp": "Field recharging hub when connected to stable power."
+        },
+        {
+          "name": "Portable Generator",
+          "cost": "300c",
+          "weight": "8.0kg",
+          "power": "48hrs on fuel",
+          "description": "Fuel-cell generator for charging and power distribution.",
+          "stats": [
+            "Output: 2kW",
+            "Hydrogen-1 fuel: 10c per 48hrs",
+            "Audible to Listen +20% within 50m"
+          ],
+          "brp": "Mobile power backbone for remote operations."
+        },
+        {
+          "name": "Thermal Blanket (Emergency)",
+          "cost": "5c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "Single-use reflective emergency blanket for heat retention.",
+          "stats": [
+            "Weatherproof emergency shelter aid"
+          ],
+          "brp": "+20% Survival in cold exposure scenarios."
+        },
+        {
+          "name": "Chem-Light Sticks (Pack of 10)",
+          "cost": "5c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Snap-activated chemical light sticks in multiple colours.",
+          "stats": [
+            "8-hour glow",
+            "10m dim light radius",
+            "No heat signature"
+          ],
+          "brp": "Silent route marking and low-profile signalling."
+        },
+        {
+          "name": "Mirror (Signal)",
+          "cost": "2c",
+          "weight": "0.1kg",
+          "power": "N/A",
+          "description": "Unbreakable signal mirror with sighting hole.",
+          "stats": [
+            "Signal up to 10km in clear daylight with Survival roll"
+          ],
+          "brp": "Low-tech long-range signalling backup."
+        },
+        {
+          "name": "Compass (Magnetic)",
+          "cost": "5c",
+          "weight": "0.1kg",
+          "power": "N/A",
+          "description": "Liquid-filled compass for reliable bearing checks.",
+          "stats": [
+            "Stable performance in Downtown sectors"
+          ],
+          "brp": "+10% Navigate in unfamiliar or low-visibility routes."
+        }
+      ]
+    },
+    {
+      "key": "lifestyle",
+      "title": "Lifestyle & Comfort Equipment",
+      "items": [
+        {
+          "name": "Third Eye Viewer (Portable)",
+          "cost": "60c",
+          "weight": "0.4kg",
+          "power": "12hrs",
+          "description": "Handheld viewer for Third Eye and approved entertainment channels.",
+          "stats": [
+            "Tracks media narrative exposure"
+          ],
+          "brp": "Can influence reputation and SCL perception."
+        },
+        {
+          "name": "Camera (Still/Video)",
+          "cost": "80c",
+          "weight": "0.6kg",
+          "power": "24hrs",
+          "description": "Weather-sealed camera with night mode and evidence-grade tagging.",
+          "stats": [
+            "8hrs video or 5000 stills"
+          ],
+          "brp": "+10% Forensics when scenes are properly documented."
+        },
+        {
+          "name": "Audio Recorder",
+          "cost": "30c",
+          "weight": "0.2kg",
+          "power": "48hrs",
+          "description": "Covert recorder with long-form capture.",
+          "stats": [
+            "24hrs recording capacity"
+          ],
+          "brp": "Conceal with Sleight of Hand; useful for intel evidence chains."
+        },
+        {
+          "name": "Holographic Projector (Personal)",
+          "cost": "120c",
+          "weight": "0.5kg",
+          "power": "12hrs",
+          "description": "Portable 3D projection for maps, briefs, and presentations.",
+          "stats": [
+            "Projection up to 2m height"
+          ],
+          "brp": "+10% Tactics during planning sessions with active holo display."
+        },
+        {
+          "name": "Playing Cards / Entertainment Kit",
+          "cost": "5c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "Compact downtime game set.",
+          "stats": [
+            "Cards, dice, and micro game kit"
+          ],
+          "brp": "Supports morale and Gamble skill scenes."
+        },
+        {
+          "name": "Grooming Kit",
+          "cost": "8c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "One-month hygiene and grooming supplies.",
+          "stats": [
+            "Sponsor-facing appearance support"
+          ],
+          "brp": "Can matter for social/sponsor-facing checks at GM discretion."
+        }
+      ]
+    },
+    {
+      "key": "storage-maintenance",
+      "title": "Storage, Cybernetic, and Workshop Support",
+      "items": [
+        {
+          "name": "Evidence Bags (Pack of 20)",
+          "cost": "5c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "Tamper-resistant evidence storage bags.",
+          "stats": [
+            "Multi-size chain-of-custody pack"
+          ],
+          "brp": "Required for full legal/corporate Forensics presentation quality."
+        },
+        {
+          "name": "Ammunition Box (Sealed)",
+          "cost": "8c",
+          "weight": "0.5kg empty",
+          "power": "N/A",
+          "description": "Weatherproof/shockproof ammo storage case.",
+          "stats": [
+            "500 pistol rounds or 200 rifle rounds"
+          ],
+          "brp": "Prevents moisture and handling degradation."
+        },
+        {
+          "name": "Equipment Case (Ruggedised)",
+          "cost": "40c",
+          "weight": "2.0kg empty",
+          "power": "N/A",
+          "description": "Hard shell waterproof case for fragile equipment transport.",
+          "stats": [
+            "Capacity: 20kg"
+          ],
+          "brp": "Protects scanners, med gear, and electronics from transport damage."
+        },
+        {
+          "name": "Cybernetic Maintenance Kit",
+          "cost": "200c",
+          "weight": "3.0kg",
+          "power": "N/A",
+          "description": "Field service kit for implant diagnostics, maintenance, and minor repairs.",
+          "stats": [
+            "Includes tools, couplers, lubricants, and common replacement parts"
+          ],
+          "brp": "Required for Craft/Medicine (Cybernetics) without penalty; otherwise -40%."
+        },
+        {
+          "name": "Power Coupler (Cybernetic)",
+          "cost": "30c",
+          "weight": "0.2kg",
+          "power": "N/A",
+          "description": "Universal charging coupler for cybernetic power systems.",
+          "stats": [
+            "Connects implants to standard field power sources"
+          ],
+          "brp": "Required for rapid recharge of internal cybernetic power cells."
+        },
+        {
+          "name": "Interface Cable (Cybernetic to Computer)",
+          "cost": "25c",
+          "weight": "0.1kg",
+          "power": "N/A",
+          "description": "Direct neural interface cable for high-speed data exchange.",
+          "stats": [
+            "Direct system access support"
+          ],
+          "brp": "Direct interface can increase Electronics (Computer) task speed by x10."
+        },
+        {
+          "name": "Vehicle Repair Kit",
+          "cost": "150c",
+          "weight": "10kg",
+          "power": "N/A",
+          "description": "Field repair supplies and tools for emergency vehicle maintenance.",
+          "stats": [
+            "Supports 5 major repairs or 20 minor fixes"
+          ],
+          "brp": "Required for vehicle Craft (Mechanical) without penalty."
+        },
+        {
+          "name": "Vehicle Toolkit (Advanced)",
+          "cost": "400c",
+          "weight": "20kg",
+          "power": "Requires external power",
+          "description": "Professional vehicle diagnostics, welding, and advanced repair suite.",
+          "stats": [
+            "+20% Craft (Mechanical) on vehicle repairs/modifications"
+          ],
+          "brp": "Supports major field repairs and modification work."
+        },
+        {
+          "name": "Magna-Clamp (Vehicle Tracking)",
+          "cost": "80c",
+          "weight": "0.5kg",
+          "power": "168hrs",
+          "description": "Magnetic encrypted GPS vehicle tracking device.",
+          "stats": [
+            "Tracking range: 50km",
+            "Detectable by scanner at ~5m"
+          ],
+          "brp": "Attach via Sleight of Hand/Stealth for remote tracking."
+        }
+      ]
+    },
+    {
+      "key": "non-lethal",
+      "title": "Security & Defense (Non-Lethal)",
+      "items": [
+        {
+          "name": "Flashbang Grenade",
+          "cost": "25c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Stun grenade with intense flash and sonic blast.",
+          "stats": [
+            "3m radius",
+            "CON roll or stunned 1d3 rounds and sensory disruption 1d6 rounds"
+          ],
+          "brp": "Breaching and crowd-control staple; minimal structural damage."
+        },
+        {
+          "name": "Smoke Grenade",
+          "cost": "15c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Dense smoke canister for LOS denial.",
+          "stats": [
+            "10m cloud lasting 2d6 rounds"
+          ],
+          "brp": "Spot and ranged attacks through smoke at -50%; movement often halved."
+        },
+        {
+          "name": "Tear Gas Grenade",
+          "cost": "20c",
+          "weight": "0.3kg",
+          "power": "N/A",
+          "description": "Chemical irritant dispersal for riot and area denial control.",
+          "stats": [
+            "5m cloud lasting 2d6 rounds",
+            "CON roll or 1d4 damage and -30% actions while exposed"
+          ],
+          "brp": "Most SLA teams use filtration but unprotected targets are heavily impaired."
+        },
+        {
+          "name": "Restraint Cuffs (Heavy Duty)",
+          "cost": "15c",
+          "weight": "0.4kg",
+          "power": "N/A",
+          "description": "Hardened cuffs with biometric lock.",
+          "stats": [
+            "STR vs 20 to break free (single attempt; failure causes 1d3 damage)",
+            "Electronics (Security) at -30% to bypass lock"
+          ],
+          "brp": "Reliable detainee control tool for live-capture objectives."
+        }
+      ]
+    }
+  ]
+}

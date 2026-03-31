@@ -1,0 +1,383 @@
+{
+  "version": "0.3.1-draft4",
+  "source": "SLA Industries -> Mothership species conversion notes",
+  "species": [
+    {
+      "name": "Human",
+      "startingScl": 10,
+      "starterPackage": "Strike Squad",
+      "choiceBonuses": [
+        { "count": 3, "bonus": 10 }
+      ],
+      "identity": "Adaptable generalists. No racial extremes; their edge is flexibility and social access to SLA's systems.",
+      "fieldPressure": "Humans are expected to fill doctrine gaps, improvise, and absorb sponsor demands without complaint.",
+      "mothershipStats": {
+        "strength": "2d10+25",
+        "speed": "2d10+25",
+        "intellect": "2d10+27",
+        "combat": "2d10+25",
+        "sanity": "2d10+30",
+        "fear": "2d10+33",
+        "body": "2d10+10"
+      },
+      "mothershipDescription": "Baseline human template with a slight Intellect and Sanity edge reflecting bureaucracy, social resilience, and operational flexibility.",
+      "notes": [
+        "Flexible Mort City baseline. No species stat is pushed hard, which keeps Humans broadly useful across all packages."
+      ],
+      "specialRules": [
+        {
+          "key": "adaptable",
+          "label": "Adaptable",
+          "summary": "Once per session, reroll one Stat check and take the better result.",
+          "optional": false,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Frother",
+      "startingScl": 10,
+      "starterPackage": "Kick Murder",
+      "skillBonuses": [
+        { "skillRef": "Melee Blade 2H", "bonus": 20 },
+        { "skillRef": "Brawl", "bonus": 20 },
+        { "skillRef": "Athletics", "bonus": 20 },
+        { "skillRef": "Intimidate", "bonus": 10 }
+      ],
+      "identity": "Clan-human berserkers born with a physiological gift for combat drugs, violence, and recovery.",
+      "fieldPressure": "Keep them pointed at the problem and away from delicate evidence chains or sponsor-facing civilians.",
+      "mothershipStats": {
+        "strength": "2d10+33",
+        "speed": "2d10+28",
+        "intellect": "2d10+20",
+        "combat": "2d10+35",
+        "sanity": "2d10+2",
+        "fear": "2d10+35",
+        "body": "2d10+25"
+      },
+      "mothershipDescription": "Extreme Strength, Combat, and Body with a weak Intellect line and dangerously fragile Sanity. Frothers are terror weapons, not balanced operatives.",
+      "notes": [
+        "High physical ceiling, fragile mind, terrible at precision or reflective tasks."
+      ],
+      "specialRules": [
+        {
+          "key": "berserkState",
+          "label": "Berserk State",
+          "summary": "When failing a Sanity Save, the Frother may enter Berserk instead of gaining Stress: +10 to Combat and Strength checks for the scene, but they must pass a Combat check to avoid attacking the nearest target.",
+          "optional": true,
+          "default": true
+        },
+        {
+          "key": "drugMetabolism",
+          "label": "Drug Metabolism",
+          "summary": "No addiction roll for standard SLA combat drugs. One combat drug per scene can be taken without a Body Save penalty.",
+          "optional": true,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Ebon",
+      "startingScl": 10,
+      "starterPackage": "Ebb Operative",
+      "skillBonuses": [
+        { "skillRef": "Biofeedback", "bonus": 20 },
+        { "skillRef": "Formulate", "bonus": 20 },
+        { "skillRef": "Medical", "bonus": 10 },
+        { "skillRef": "Psychology", "bonus": 10 }
+      ],
+      "identity": "Mystical, emotionally volatile Ebb users whose greatest strength is disciplined mental focus rather than physical resilience.",
+      "fieldPressure": "They are trusted when the mission needs calm precision, but every Flux spike is watched and every psychic event hits them harder.",
+      "mothershipStats": {
+        "strength": "2d10+20",
+        "speed": "2d10+25",
+        "intellect": "2d10+47",
+        "combat": "2d10+22",
+        "sanity": "2d10+25",
+        "fear": "2d10+14",
+        "body": "2d10+5"
+      },
+      "mothershipDescription": "Exceptional Intellect backed by weak Strength and Body. Ebons solve impossible problems through Ebb discipline, not brute force.",
+      "notes": [
+        "Physically frail, emotionally sensitive, and deeply tied to the psychic environment around them."
+      ],
+      "specialRules": [
+        {
+          "key": "ebbSensitivity",
+          "label": "Ebb Sensitivity",
+          "summary": "Automatically senses nearby Ebb use within Close Range. Sanity Saves against xenoesoteric or reality-warping events are rolled at Disadvantage.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "fluxPool",
+          "label": "Flux Pool",
+          "summary": "Begins with Flux equal to Intellect / 4 with a minimum reserve of 20. Flux recovers at 1 point per hour of rest.",
+          "optional": false,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Brain Waster",
+      "startingScl": 10,
+      "starterPackage": "Ebb Operative",
+      "skillBonuses": [
+        { "skillRef": "Formulate", "bonus": 20 },
+        { "skillRef": "Biofeedback", "bonus": 10 },
+        { "skillRef": "Intimidate", "bonus": 10 },
+        { "skillRef": "Firearm (Rifle/Shotgun)", "bonus": 10 }
+      ],
+      "identity": "Violent evolutionary offshoots of the Ebon; hateful, aggressive Ebb users who are more dangerous in a fight than in a briefing room.",
+      "fieldPressure": "Command expects results fast, but collateral panic and the psychic shockwave around them are never far behind.",
+      "mothershipStats": {
+        "strength": "2d10+28",
+        "speed": "2d10+25",
+        "intellect": "2d10+43",
+        "combat": "2d10+32",
+        "sanity": "2d10+33",
+        "fear": "2d10+10",
+        "body": "2d10+13"
+      },
+      "mothershipDescription": "A harsher Ebb profile than Ebon: stronger, more aggressive, and more immediately dangerous, but socially and psychically corrosive.",
+      "notes": [
+        "Better fighters than Ebons, worse diplomats, and much harder on the people around them."
+      ],
+      "specialRules": [
+        {
+          "key": "ebbAggression",
+          "label": "Ebb Aggression",
+          "summary": "Uses the same Flux Pool rules as Ebon, including a minimum reserve of 20. When dealing damage with Ebb abilities, add +1d5 damage.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "unnervingPresence",
+          "label": "Unnerving Presence",
+          "summary": "Close-range friendly operatives roll Fear Saves at Disadvantage when the Brain Waster uses an Ebb ability.",
+          "optional": true,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Wraith Raider",
+      "startingScl": 10,
+      "starterPackage": "Scouting",
+      "skillBonuses": [
+        { "skillRef": "Athletics", "bonus": 20 },
+        { "skillRef": "Dodge", "bonus": 20 },
+        { "skillRef": "Spot Hidden", "bonus": 20 },
+        { "skillRef": "Firearm (Rifle/Shotgun)", "bonus": 10 }
+      ],
+      "identity": "Feline ice-world hunters with lightning reflexes, superior senses, and the fastest natural movement profile in the World of Progress.",
+      "fieldPressure": "Use them for pursuit, flank work, and live target acquisition before a scene turns static or heavily scripted.",
+      "mothershipStats": {
+        "strength": "2d10+25",
+        "speed": "2d10+40",
+        "intellect": "2d10+28",
+        "combat": "2d10+33",
+        "sanity": "2d10+22",
+        "fear": "2d10+18",
+        "body": "2d10+12"
+      },
+      "mothershipDescription": "The speed apex among natural species. Wraith Raiders react, pursue, and strike before most opponents have processed the danger.",
+      "notes": [
+        "Race Raider is treated as a more feral Wraith Raider variant rather than a separate baseline species template."
+      ],
+      "specialRules": [
+        {
+          "key": "predatorSenses",
+          "label": "Predator Senses",
+          "summary": "Advantage on Speed-based checks for perception, detecting ambush, or initiative. Never surprised in natural or urban environments unless by supernatural means.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "naturalWeapons",
+          "label": "Natural Weapons",
+          "summary": "Claws deal Strength / 10 + 1d5 damage at Adjacent range and count as primary species weapons.",
+          "optional": false,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Shaktar",
+      "startingScl": 10,
+      "starterPackage": "Death Squad",
+      "skillBonuses": [
+        { "skillRef": "Melee Blade 2H", "bonus": 20 },
+        { "skillRef": "Tactics", "bonus": 20 },
+        { "skillRef": "Command", "bonus": 10 },
+        { "skillRef": "SLA Info", "bonus": 10 }
+      ],
+      "identity": "Saurian warriors of honour and martial tradition, combining brutal strength with disciplined battlefield intent.",
+      "fieldPressure": "Doctrine has to respect their code or the squad risks discipline fractures at the worst possible time.",
+      "mothershipStats": {
+        "strength": "2d10+37",
+        "speed": "2d10+30",
+        "intellect": "2d10+20",
+        "combat": "2d10+37",
+        "sanity": "2d10+18",
+        "fear": "2d10+40",
+        "body": "2d10+32"
+      },
+      "mothershipDescription": "A front-line martial species with exceptional Strength, Combat, and Body backed by formidable Sanity and Fear saves.",
+      "notes": [
+        "Tactical and martial intelligence are strong; abstract cognition is weaker than their battlefield presence."
+      ],
+      "specialRules": [
+        {
+          "key": "honourBound",
+          "label": "Honour Bound",
+          "summary": "Breaking a code of honour forces a Sanity Save or the Shaktar gains 1d3 Stress.",
+          "optional": true,
+          "default": true
+        },
+        {
+          "key": "naturalWeapons",
+          "label": "Natural Weapons",
+          "summary": "Claws deal Strength / 10 damage at Adjacent range. Shaktar gain Advantage on grappling or restraining Strength checks.",
+          "optional": false,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Stormer 313 Malice",
+      "startingScl": 10,
+      "starterPackage": "Death Squad",
+      "skillBonuses": [
+        { "skillRef": "Brawl", "bonus": 20 },
+        { "skillRef": "Melee Axe", "bonus": 20 },
+        { "skillRef": "Firearm (Auto/Support)", "bonus": 20 },
+        { "skillRef": "Persuade", "bonus": -10 },
+        { "skillRef": "Fast Talk", "bonus": -10 }
+      ],
+      "identity": "Karma's standard biogenetic combat unit: a massive regenerating killing machine with overwhelming power and minimal subtlety.",
+      "fieldPressure": "They solve breaches, riots, and hard resistance, but subtlety evaporates the moment they become the main plan.",
+      "mothershipStats": {
+        "strength": "2d10+43",
+        "speed": "2d10+30",
+        "intellect": "2d10+17",
+        "combat": "2d10+40",
+        "sanity": "2d10+20",
+        "fear": "2d10+47",
+        "body": "2d10+25"
+      },
+      "mothershipDescription": "Near-ceiling assault biology: immense Strength, Combat, and Body with deliberately shallow abstract reasoning and social finesse.",
+      "notes": [
+        "Purpose-built for violence, shock entry, and surviving damage that would kill almost anyone else."
+      ],
+      "specialRules": [
+        {
+          "key": "prometheusRegeneration",
+          "label": "Prometheus Regeneration",
+          "summary": "At the end of every fourth combat round, recover 1d5 Health. Once wounds are fully healed, continue regenerating 1 Health per round.",
+          "optional": true,
+          "default": true
+        },
+        {
+          "key": "biogeneticAggression",
+          "label": "Biogenetic Aggression",
+          "summary": "Disadvantage on Intellect checks involving diplomacy, deception detection, or abstract reasoning.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "financeChipMandatory",
+          "label": "Finance Chip Mandatory",
+          "summary": "The Karma finance chip is a built-in hindrance and cannot be removed.",
+          "optional": false,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Stormer 711 Xeno",
+      "startingScl": 10,
+      "starterPackage": "Scouting",
+      "skillBonuses": [
+        { "skillRef": "Athletics", "bonus": 20 },
+        { "skillRef": "Dodge", "bonus": 20 },
+        { "skillRef": "Firearm (SMG)", "bonus": 20 },
+        { "skillRef": "Streetwise", "bonus": 10 }
+      ],
+      "identity": "Karma's fast insectile camouflage unit: a stealth biogen built for pursuit, ambush, and pressure from impossible angles.",
+      "fieldPressure": "Best used where speed and feral pressure matter more than conversation, procedure, or sponsor optics.",
+      "mothershipStats": {
+        "strength": "2d10+30",
+        "speed": "2d10+40",
+        "intellect": "2d10+23",
+        "combat": "2d10+35",
+        "sanity": "2d10+15",
+        "fear": "2d10+42",
+        "body": "2d10+18"
+      },
+      "mothershipDescription": "Matches Wraith Raider speed with biogen resilience, regeneration, and camouflage systems in place of natural grace.",
+      "notes": [
+        "Fastest movement profile in the game, backed by natural chitin armour and unsettling inhuman presence."
+      ],
+      "specialRules": [
+        {
+          "key": "chameleonChitin",
+          "label": "Chameleon Chitin",
+          "summary": "Spend 1 action to become near-invisible. Detection is at Disadvantage while still; moving breaks the effect.",
+          "optional": true,
+          "default": true
+        },
+        {
+          "key": "prometheusRegeneration",
+          "label": "Prometheus Regeneration",
+          "summary": "At the end of every fourth combat round, recover 1d5 Health.",
+          "optional": true,
+          "default": true
+        },
+        {
+          "key": "inhumanAppearance",
+          "label": "Inhuman Appearance",
+          "summary": "Social Intellect checks against other species are at Disadvantage because the Xeno's appearance is deeply unnerving.",
+          "optional": true,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Advanced Carrien",
+      "startingScl": 10,
+      "starterPackage": "Tech Ops",
+      "skillBonuses": [
+        { "skillRef": "Brawl", "bonus": 20 },
+        { "skillRef": "Melee Axe", "bonus": 20 },
+        { "skillRef": "Streetwise", "bonus": 20 },
+        { "skillRef": "Persuade", "bonus": -10 },
+        { "skillRef": "Command", "bonus": -10 }
+      ],
+      "identity": "Cunning survivor-mutants with strong instincts and an uneasy fit inside official SLA structures.",
+      "fieldPressure": "They thrive in broken districts and dirty jobs, but prejudice follows them into every briefing room.",
+      "mothershipStats": {
+        "strength": "2d10+30",
+        "speed": "2d10+26",
+        "intellect": "2d10+30",
+        "combat": "2d10+26",
+        "sanity": "2d10+14",
+        "fear": "2d10+14",
+        "body": "2d10+18"
+      },
+      "mothershipDescription": "Legacy draft Carrien template retained until a source-grounded 1st Edition conversion pass is written.",
+      "notes": [
+        "This entry is still using the project's legacy Carrien draft because the new conversion notes did not include a Carrien profile."
+      ],
+      "specialRules": [
+        {
+          "key": "socialPrejudice",
+          "label": "Social Prejudice",
+          "summary": "Track district or sponsor prejudice penalties where relevant.",
+          "optional": true,
+          "default": true
+        }
+      ]
+    }
+  ]
+}

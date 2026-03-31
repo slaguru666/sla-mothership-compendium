@@ -1,0 +1,897 @@
+{
+  "version": "0.1.0",
+  "source": "SLA Mothership species + training package trauma response matrix",
+  "profiles": [
+    {
+      "key": "Human::Death Squad",
+      "title": "Human / Death Squad: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during hard elimination doctrine and breach-line pressure.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Corporate Override shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Human::Strike Squad",
+      "title": "Human / Strike Squad: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during tight team movement, entry discipline, and controlled force.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Corporate Override shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Human::Kick Murder",
+      "title": "Human / Kick Murder: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Corporate Override shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Human::Scouting",
+      "title": "Human / Scouting: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Corporate Override shaped by Scouting doctrine."
+    },
+    {
+      "key": "Human::Investigation",
+      "title": "Human / Investigation: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during evidence control, witness handling, and structured pressure.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Corporate Override shaped by Investigation doctrine."
+    },
+    {
+      "key": "Human::Media",
+      "title": "Human / Media: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Corporate Override shaped by Media doctrine."
+    },
+    {
+      "key": "Human::Medical",
+      "title": "Human / Medical: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Corporate Override shaped by Medical doctrine."
+    },
+    {
+      "key": "Human::Mechanic",
+      "title": "Human / Mechanic: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Corporate Override shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Human::Tech Ops",
+      "title": "Human / Tech Ops: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Corporate Override shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Human::Pilot",
+      "title": "Human / Pilot: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Corporate Override shaped by Pilot doctrine."
+    },
+    {
+      "key": "Human::Ebb Operative",
+      "title": "Human / Ebb Operative: Corporate Override",
+      "trigger": "When they take Stress, lose control of a scene, or see the plan slipping during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "Allies in Close range may either clear 1 Stress or gain +5 on their next coordinated roll. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "The operative becomes rigid and command-dependent; independent social or creative action is at -10 until someone reasserts the plan. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Invoke sponsor discipline to reroll one failed Command, Bureaucracy, or Fear-related test, but afterwards a superior, sponsor, or handler is owed a concession. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Corporate Override shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Frother::Death Squad",
+      "title": "Frother / Death Squad: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during hard elimination doctrine and breach-line pressure.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Red Mist Containment shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Frother::Strike Squad",
+      "title": "Frother / Strike Squad: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during tight team movement, entry discipline, and controlled force.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Red Mist Containment shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Frother::Kick Murder",
+      "title": "Frother / Kick Murder: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Red Mist Containment shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Frother::Scouting",
+      "title": "Frother / Scouting: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Red Mist Containment shaped by Scouting doctrine."
+    },
+    {
+      "key": "Frother::Investigation",
+      "title": "Frother / Investigation: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during evidence control, witness handling, and structured pressure.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Red Mist Containment shaped by Investigation doctrine."
+    },
+    {
+      "key": "Frother::Media",
+      "title": "Frother / Media: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Red Mist Containment shaped by Media doctrine."
+    },
+    {
+      "key": "Frother::Medical",
+      "title": "Frother / Medical: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Red Mist Containment shaped by Medical doctrine."
+    },
+    {
+      "key": "Frother::Mechanic",
+      "title": "Frother / Mechanic: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Red Mist Containment shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Frother::Tech Ops",
+      "title": "Frother / Tech Ops: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Red Mist Containment shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Frother::Pilot",
+      "title": "Frother / Pilot: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Red Mist Containment shaped by Pilot doctrine."
+    },
+    {
+      "key": "Frother::Ebb Operative",
+      "title": "Frother / Ebb Operative: Red Mist Containment",
+      "trigger": "When they are wounded, restrained, denied a charge lane, or chemically overstimulated during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "One ally can immediately surge with them, gaining +10 on the next melee, Brawl, or forced-entry action. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "The nearest ally or bystander takes 1 Stress, loses cover, or has to scramble clear as the Frother's violence spills outward. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Ignore wound penalties for one combat round and close distance immediately, then gain 1d5 Stress when the surge burns out. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Red Mist Containment shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Ebon::Death Squad",
+      "title": "Ebon / Death Squad: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during hard elimination doctrine and breach-line pressure.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Quiet Flux shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Ebon::Strike Squad",
+      "title": "Ebon / Strike Squad: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during tight team movement, entry discipline, and controlled force.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Quiet Flux shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Ebon::Kick Murder",
+      "title": "Ebon / Kick Murder: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Quiet Flux shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Ebon::Scouting",
+      "title": "Ebon / Scouting: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Quiet Flux shaped by Scouting doctrine."
+    },
+    {
+      "key": "Ebon::Investigation",
+      "title": "Ebon / Investigation: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during evidence control, witness handling, and structured pressure.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Quiet Flux shaped by Investigation doctrine."
+    },
+    {
+      "key": "Ebon::Media",
+      "title": "Ebon / Media: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Quiet Flux shaped by Media doctrine."
+    },
+    {
+      "key": "Ebon::Medical",
+      "title": "Ebon / Medical: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Quiet Flux shaped by Medical doctrine."
+    },
+    {
+      "key": "Ebon::Mechanic",
+      "title": "Ebon / Mechanic: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Quiet Flux shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Ebon::Tech Ops",
+      "title": "Ebon / Tech Ops: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Quiet Flux shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Ebon::Pilot",
+      "title": "Ebon / Pilot: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Quiet Flux shaped by Pilot doctrine."
+    },
+    {
+      "key": "Ebon::Ebb Operative",
+      "title": "Ebon / Ebb Operative: Quiet Flux",
+      "trigger": "When they absorb psychic shock, intense grief, or impossible sensory information during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "A nearby ally gains calm focus: clear 1 Stress, stabilize a Fear response, or take +10 on one careful action. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "Reality hushes around the Ebon; nearby allies feel the pressure and take -5 on their next impulsive or noisy action. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Open a moment of lucid stillness that lets one ally reroll a failed mental check, but the Ebon immediately gains 1d5 Stress. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Quiet Flux shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Brain Waster::Death Squad",
+      "title": "Brain Waster / Death Squad: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during hard elimination doctrine and breach-line pressure.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Predatory Backwash shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Brain Waster::Strike Squad",
+      "title": "Brain Waster / Strike Squad: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during tight team movement, entry discipline, and controlled force.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Predatory Backwash shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Brain Waster::Kick Murder",
+      "title": "Brain Waster / Kick Murder: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Predatory Backwash shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Brain Waster::Scouting",
+      "title": "Brain Waster / Scouting: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Predatory Backwash shaped by Scouting doctrine."
+    },
+    {
+      "key": "Brain Waster::Investigation",
+      "title": "Brain Waster / Investigation: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during evidence control, witness handling, and structured pressure.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Predatory Backwash shaped by Investigation doctrine."
+    },
+    {
+      "key": "Brain Waster::Media",
+      "title": "Brain Waster / Media: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Predatory Backwash shaped by Media doctrine."
+    },
+    {
+      "key": "Brain Waster::Medical",
+      "title": "Brain Waster / Medical: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Predatory Backwash shaped by Medical doctrine."
+    },
+    {
+      "key": "Brain Waster::Mechanic",
+      "title": "Brain Waster / Mechanic: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Predatory Backwash shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Brain Waster::Tech Ops",
+      "title": "Brain Waster / Tech Ops: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Predatory Backwash shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Brain Waster::Pilot",
+      "title": "Brain Waster / Pilot: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Predatory Backwash shaped by Pilot doctrine."
+    },
+    {
+      "key": "Brain Waster::Ebb Operative",
+      "title": "Brain Waster / Ebb Operative: Predatory Backwash",
+      "trigger": "When they smell weakness, take psychic pain, or sense prey escaping the kill during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "Nearby allies gain ruthless momentum: +5 on their next attack against the same target or an immediate free reposition toward the threat. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "The psychic splash is ugly. Allies in Close range take 1 Stress or hesitate before acting aggressively near the Brain Waster. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Force the scene into a kill-focus: one target becomes obvious and allies gain +10 to attack it for a round, but everyone nearby knows the Brain Waster is slipping. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Predatory Backwash shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Wraith Raider::Death Squad",
+      "title": "Wraith Raider / Death Squad: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during hard elimination doctrine and breach-line pressure.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Predator Snap shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Wraith Raider::Strike Squad",
+      "title": "Wraith Raider / Strike Squad: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during tight team movement, entry discipline, and controlled force.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Predator Snap shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Wraith Raider::Kick Murder",
+      "title": "Wraith Raider / Kick Murder: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Predator Snap shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Wraith Raider::Scouting",
+      "title": "Wraith Raider / Scouting: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Predator Snap shaped by Scouting doctrine."
+    },
+    {
+      "key": "Wraith Raider::Investigation",
+      "title": "Wraith Raider / Investigation: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during evidence control, witness handling, and structured pressure.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Predator Snap shaped by Investigation doctrine."
+    },
+    {
+      "key": "Wraith Raider::Media",
+      "title": "Wraith Raider / Media: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Predator Snap shaped by Media doctrine."
+    },
+    {
+      "key": "Wraith Raider::Medical",
+      "title": "Wraith Raider / Medical: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Predator Snap shaped by Medical doctrine."
+    },
+    {
+      "key": "Wraith Raider::Mechanic",
+      "title": "Wraith Raider / Mechanic: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Predator Snap shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Wraith Raider::Tech Ops",
+      "title": "Wraith Raider / Tech Ops: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Predator Snap shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Wraith Raider::Pilot",
+      "title": "Wraith Raider / Pilot: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Predator Snap shaped by Pilot doctrine."
+    },
+    {
+      "key": "Wraith Raider::Ebb Operative",
+      "title": "Wraith Raider / Ebb Operative: Predator Snap",
+      "trigger": "When they are cornered, lose sight of prey, or are forced into static formation during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "One ally may immediately shift position, dive for flank, or gain +10 on the next pursuit, ambush, or precision shot. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "The Wraith peels away from the group instinctively; squad cohesion frays and nearby allies lose the benefit of tight formation or overwatch. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Exploit a predatory opening to act first against one exposed threat, but the Wraith must commit to that line and cannot hold the broader objective at the same time. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Predator Snap shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Shaktar::Death Squad",
+      "title": "Shaktar / Death Squad: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during hard elimination doctrine and breach-line pressure.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Honour Lock shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Shaktar::Strike Squad",
+      "title": "Shaktar / Strike Squad: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during tight team movement, entry discipline, and controlled force.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Honour Lock shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Shaktar::Kick Murder",
+      "title": "Shaktar / Kick Murder: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Honour Lock shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Shaktar::Scouting",
+      "title": "Shaktar / Scouting: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Honour Lock shaped by Scouting doctrine."
+    },
+    {
+      "key": "Shaktar::Investigation",
+      "title": "Shaktar / Investigation: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during evidence control, witness handling, and structured pressure.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Honour Lock shaped by Investigation doctrine."
+    },
+    {
+      "key": "Shaktar::Media",
+      "title": "Shaktar / Media: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Honour Lock shaped by Media doctrine."
+    },
+    {
+      "key": "Shaktar::Medical",
+      "title": "Shaktar / Medical: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Honour Lock shaped by Medical doctrine."
+    },
+    {
+      "key": "Shaktar::Mechanic",
+      "title": "Shaktar / Mechanic: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Honour Lock shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Shaktar::Tech Ops",
+      "title": "Shaktar / Tech Ops: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Honour Lock shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Shaktar::Pilot",
+      "title": "Shaktar / Pilot: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Honour Lock shaped by Pilot doctrine."
+    },
+    {
+      "key": "Shaktar::Ebb Operative",
+      "title": "Shaktar / Ebb Operative: Honour Lock",
+      "trigger": "When their code is insulted, an ally falls dishonourably, or a duel-worthy threat emerges during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "An ally gains steadiness from the Shaktar's presence: +10 on one defensive, leadership, or hold-the-line action. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "The Shaktar becomes bound to the obvious challenge and resists compromise, retreat, or deception until the honour issue is addressed. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Declare a martial vow against a target or objective; the Shaktar gains +10 while pursuing it, but cannot willingly abandon that vow without taking 1d5 Stress. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Honour Lock shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Death Squad",
+      "title": "Stormer 313 Malice / Death Squad: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during hard elimination doctrine and breach-line pressure.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Breach Engine shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Strike Squad",
+      "title": "Stormer 313 Malice / Strike Squad: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during tight team movement, entry discipline, and controlled force.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Breach Engine shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Kick Murder",
+      "title": "Stormer 313 Malice / Kick Murder: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Breach Engine shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Scouting",
+      "title": "Stormer 313 Malice / Scouting: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Breach Engine shaped by Scouting doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Investigation",
+      "title": "Stormer 313 Malice / Investigation: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during evidence control, witness handling, and structured pressure.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Breach Engine shaped by Investigation doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Media",
+      "title": "Stormer 313 Malice / Media: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Breach Engine shaped by Media doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Medical",
+      "title": "Stormer 313 Malice / Medical: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Breach Engine shaped by Medical doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Mechanic",
+      "title": "Stormer 313 Malice / Mechanic: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Breach Engine shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Tech Ops",
+      "title": "Stormer 313 Malice / Tech Ops: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Breach Engine shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Pilot",
+      "title": "Stormer 313 Malice / Pilot: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Breach Engine shaped by Pilot doctrine."
+    },
+    {
+      "key": "Stormer 313 Malice::Ebb Operative",
+      "title": "Stormer 313 Malice / Ebb Operative: Breach Engine",
+      "trigger": "When they hit hard resistance, suffer visible injury, or are treated as the blunt solution during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "Allies nearby may immediately press the breach: gain +10 on one push, suppress, or shock-entry action this round. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "Subtlety collapses. Nearby operatives lose finesse; social, stealth, or delicate technical actions are at -10 while the Stormer dominates the scene. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Turn the response into overwhelming mass: ignore knockback, restraint, and hesitation for one round, but every nearby ally or witness reads the escalation instantly. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Breach Engine shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Death Squad",
+      "title": "Stormer 711 Xeno / Death Squad: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during hard elimination doctrine and breach-line pressure.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Stalker Reflex shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Strike Squad",
+      "title": "Stormer 711 Xeno / Strike Squad: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during tight team movement, entry discipline, and controlled force.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Stalker Reflex shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Kick Murder",
+      "title": "Stormer 711 Xeno / Kick Murder: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Stalker Reflex shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Scouting",
+      "title": "Stormer 711 Xeno / Scouting: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Stalker Reflex shaped by Scouting doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Investigation",
+      "title": "Stormer 711 Xeno / Investigation: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during evidence control, witness handling, and structured pressure.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Stalker Reflex shaped by Investigation doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Media",
+      "title": "Stormer 711 Xeno / Media: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Stalker Reflex shaped by Media doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Medical",
+      "title": "Stormer 711 Xeno / Medical: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Stalker Reflex shaped by Medical doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Mechanic",
+      "title": "Stormer 711 Xeno / Mechanic: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Stalker Reflex shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Tech Ops",
+      "title": "Stormer 711 Xeno / Tech Ops: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Stalker Reflex shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Pilot",
+      "title": "Stormer 711 Xeno / Pilot: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Stalker Reflex shaped by Pilot doctrine."
+    },
+    {
+      "key": "Stormer 711 Xeno::Ebb Operative",
+      "title": "Stormer 711 Xeno / Ebb Operative: Stalker Reflex",
+      "trigger": "When they are observed too clearly, lose camouflage, or feel prey slipping through a net during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "One ally can immediately reposition, hide, or line up a crossfire with +10 on the next attack from concealment. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "The Xeno's inhuman movement shakes the team; allies in sight take -5 on their next social or comms-dependent action. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Explode into hunting movement and gain a free stealth or flank reposition, but all nearby friendlies know exactly how unnatural that burst looked. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Stalker Reflex shaped by Ebb Operative doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Death Squad",
+      "title": "Advanced Carrien / Death Squad: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during hard elimination doctrine and breach-line pressure.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response naturally supports direct violence, suppression, and target deletion.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. Non-combat options shrink fast; restraint, mercy, and evidence care become secondary.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Mark one hostile or kill-zone. Allies who commit to it gain +10 for one round, but any collateral or intimidation fallout is amplified.",
+      "summary": "Scavenger Adaptation shaped by Death Squad doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Strike Squad",
+      "title": "Advanced Carrien / Strike Squad: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during tight team movement, entry discipline, and controlled force.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response strengthens covering arcs, shield work, and clean squad timing.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. Breaking formation feels like failure; the operative resists improvisation that pulls them off the team rhythm.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Call a formation snap. Up to two allies may immediately reposition or gain +5 to their next disciplined action, but everyone becomes more predictable for a round.",
+      "summary": "Scavenger Adaptation shaped by Strike Squad doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Kick Murder",
+      "title": "Advanced Carrien / Kick Murder: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during close violence, intimidation, and spectacle-driven aggression.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response rewards momentum, fear projection, and brutal follow-through in close quarters.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. Collateral intimidation rises immediately; delicate witnesses, civilians, or weak-willed allies are rattled.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Turn panic into a public display of violence. Gain +10 on one melee or intimidation burst, but someone nearby remembers how ugly it looked.",
+      "summary": "Scavenger Adaptation shaped by Kick Murder doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Scouting",
+      "title": "Advanced Carrien / Scouting: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during pursuit, overwatch, live target acquisition, and flank discipline.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response sharpens lines of sight, pursuit instincts, and exploit-the-gap movement.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. The operative starts thinking like a lone hunter and can drift away from the wider squad objective.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Name an escape route, rooftop, blind corner, or kill lane; one ally can exploit it immediately, but the operative becomes fixated on that line until it resolves.",
+      "summary": "Scavenger Adaptation shaped by Scouting doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Investigation",
+      "title": "Advanced Carrien / Investigation: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during evidence control, witness handling, and structured pressure.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response helps lock onto motive, contradiction, or one critical clue others are missing.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. The operative becomes obsessed with one read, suspect, or theory and can miss broader battlefield cues.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Call out the key pattern in the chaos and grant +10 to one search, read, or interrogation move, but if it is wrong the whole scene loses tempo.",
+      "summary": "Scavenger Adaptation shaped by Investigation doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Media",
+      "title": "Advanced Carrien / Media: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during camera awareness, narrative control, and audience-facing posture.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response can seize attention, redirect blame, and create a dramatic moment that helps the team.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. Everything starts to feel performative; truth, caution, and privacy suffer when the spotlight instinct takes over.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Take control of the scene's narrative for one beat: gain +10 to one social pivot or broadcast action, but someone important sees the mask slip.",
+      "summary": "Scavenger Adaptation shaped by Media doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Medical",
+      "title": "Advanced Carrien / Medical: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during casualty triage, harm reduction, and keeping people functional.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response immediately prioritizes stabilization, pain control, and keeping others in the fight.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. The operative can overcommit to one casualty or moral triage call and neglect the tactical picture.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Declare emergency triage authority: one ally may ignore a penalty or clear 1d5 Stress, but someone else is necessarily deprioritized.",
+      "summary": "Scavenger Adaptation shaped by Medical doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Mechanic",
+      "title": "Advanced Carrien / Mechanic: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during repair under pressure, jury-rig resilience, and practical continuity.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response spots what can still be made to work and buys the team one more functioning moment.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. The operative starts treating people like systems; empathy and soft judgment degrade while the fix obsession takes hold.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Force one broken plan, device, or route to function one more time, but it becomes unstable, noisy, or impossible to hide.",
+      "summary": "Scavenger Adaptation shaped by Mechanic doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Tech Ops",
+      "title": "Advanced Carrien / Tech Ops: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during systems dominance, tactical feed control, and hostile tech exploitation.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response sharpens data interpretation, sensor control, and battlefield command through information.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. The operative overrelies on systems, feeds, or assumptions and becomes brittle if the data picture changes.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Call a systems spike: one allied action may count as perfectly timed intel support, but afterwards the local network, drone, or feed is compromised.",
+      "summary": "Scavenger Adaptation shaped by Tech Ops doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Pilot",
+      "title": "Advanced Carrien / Pilot: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during vehicle survival, route discipline, and momentum through movement.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response favours speed, extraction thinking, and preserving an exit line for the team.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. The operative becomes route-fixated and can prioritise escape or movement over mission nuance.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Name the extraction vector. One ally may immediately move, mount up, or gain +10 on a vehicle-related action, but abandoning that route becomes psychologically harder.",
+      "summary": "Scavenger Adaptation shaped by Pilot doctrine."
+    },
+    {
+      "key": "Advanced Carrien::Ebb Operative",
+      "title": "Advanced Carrien / Ebb Operative: Scavenger Adaptation",
+      "trigger": "When they are cornered, cut off from resources, or forced into open contempt from others during psychic composure, hidden pressure, and the disciplined use of the Ebb.",
+      "positive": "One ally may improvise from the Carrien's instinct: reroll a Streetwise, survival, theft, or dirty-fix style action. The response can calm or focus another operative through eerie certainty, attention, or psychic poise.",
+      "negative": "Trust drops fast. Nearby allies become suspicious, losing confidence in promises, command, or clean procedure until results appear. Everyone nearby feels that something is not normal; fear, suspicion, or social strain rises even when the effect helps.",
+      "session": "Turn desperation into advantage by producing an ugly but effective solution; it works once, but leaves a social stain or material mess behind. Declare a single controlled surge of unnatural clarity: reroll one mental or Ebb-linked failure, but mark the scene as visibly touched by the Ebb.",
+      "summary": "Scavenger Adaptation shaped by Ebb Operative doctrine."
+    }
+  ]
+}

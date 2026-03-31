@@ -1,0 +1,385 @@
+{
+  "conditions": [
+    {
+      "name": "Anhedonia",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/exhausted.png",
+      "severity": 1,
+      "effectSummary": "Recovery feels numb and incomplete. Sanity-based focus and morale suffer.",
+      "severityScale": "Each untreated level deepens the emotional flatline and worsens penalties.",
+      "treatment": "Rest, therapy, meds, squad support, secure downtime.",
+      "description": "The operative struggles to feel relief, reward, or emotional connection after stress.",
+      "statMods": { "sanity": -5 },
+      "skillMods": [
+        { "skill": "Persuade", "value": -5 },
+        { "skill": "Command", "value": -5 }
+      ]
+    },
+    {
+      "name": "Bleeding",
+      "category": "Physical",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/bleeding.png",
+      "severity": 1,
+      "effectSummary": "Ongoing blood loss. Existing bleed automation handles the Health drain.",
+      "severityScale": "Each untreated level increases blood loss and compounds danger.",
+      "treatment": "Pressure, clotting agent, dressing, tourniquet, surgery.",
+      "description": "Open trauma or internal bleeding is actively worsening the operative's condition.",
+      "statMods": {},
+      "skillMods": []
+    },
+    {
+      "name": "Broken",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/deflated.png",
+      "severity": 1,
+      "effectSummary": "Confidence and composure collapse under pressure.",
+      "severityScale": "Each untreated level makes leadership and fear control harder.",
+      "treatment": "Reassurance, therapy, recovery, successful action, removal from stressors.",
+      "description": "The operative has emotionally cracked and struggles to hold formation or nerve.",
+      "statMods": { "fear": -5 },
+      "skillMods": [
+        { "skill": "Command", "value": -10 },
+        { "skill": "Intimidate", "value": -5 }
+      ]
+    },
+    {
+      "name": "Corrosive Atmosphere",
+      "category": "Environmental",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/corrosive_atmosphere.png",
+      "severity": 1,
+      "effectSummary": "Acidic or corrosive exposure slows movement and punishes endurance.",
+      "severityScale": "Each untreated level worsens pain, degradation, and mobility loss.",
+      "treatment": "Seal suit, neutralise contaminant, wash down, replace compromised gear.",
+      "description": "The operative is operating in or contaminated by a corrosive environment.",
+      "statMods": { "speed": -5, "body": -5 },
+      "skillMods": []
+    },
+    {
+      "name": "Coward",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/coward.png",
+      "severity": 1,
+      "effectSummary": "The operative hesitates when violence and fear collide.",
+      "severityScale": "Each untreated level further erodes combat nerve and fear control.",
+      "treatment": "Calming support, therapy, command pressure, rest, successful exposure.",
+      "description": "The operative instinctively withdraws from direct confrontation.",
+      "statMods": { "combat": -10, "fear": -10 },
+      "skillMods": []
+    },
+    {
+      "name": "Cryosickness",
+      "category": "Physical",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/cryosickness.png",
+      "severity": 1,
+      "effectSummary": "Nausea, vertigo, and weakness after transit or cold shock.",
+      "severityScale": "Each untreated level worsens dizziness and physical sluggishness.",
+      "treatment": "Warmth, hydration, anti-nausea meds, monitored recovery.",
+      "description": "The operative is reeling from cryo exposure or violent decompression effects.",
+      "statMods": { "strength": -5, "speed": -10 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -5 },
+        { "skill": "Dodge", "value": -5 }
+      ]
+    },
+    {
+      "name": "Exhausted",
+      "category": "Physical",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/exhausted.png",
+      "severity": 1,
+      "effectSummary": "Fatigue drags down physical output and reaction time.",
+      "severityScale": "Each untreated level compounds strain across physical actions.",
+      "treatment": "Sleep, food, water, stimulants, light duty, rest cycle.",
+      "description": "The operative is running on fumes and cannot sustain peak performance.",
+      "statMods": { "strength": -10, "speed": -10, "combat": -5 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -10 },
+        { "skill": "Climb", "value": -10 },
+        { "skill": "Swim", "value": -10 },
+        { "skill": "Dodge", "value": -5 }
+      ]
+    },
+    {
+      "name": "Extreme Cold",
+      "category": "Environmental",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/extreme_cold.png",
+      "severity": 1,
+      "effectSummary": "Cold stress slows limbs, reactions, and endurance.",
+      "severityScale": "Each untreated level deepens numbness and loss of motor control.",
+      "treatment": "Insulation, heat source, dry clothing, rewarm gradually.",
+      "description": "The operative is suffering from freezing temperatures or cold exposure.",
+      "statMods": { "speed": -5, "combat": -5, "body": -5 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -5 },
+        { "skill": "Climb", "value": -5 },
+        { "skill": "Firearm (Pistol)", "value": -5 },
+        { "skill": "Firearm (Rifle/Shotgun)", "value": -5 },
+        { "skill": "Firearm (SMG)", "value": -5 },
+        { "skill": "Firearm (Auto/Support)", "value": -5 }
+      ]
+    },
+    {
+      "name": "Extreme Heat",
+      "category": "Environmental",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/extreme_heat.png",
+      "severity": 1,
+      "effectSummary": "Heat stress blurs judgement and punishes sustained activity.",
+      "severityScale": "Each untreated level worsens dehydration, confusion, and fatigue.",
+      "treatment": "Cool zone, fluids, shade, suit regulation, reduced exertion.",
+      "description": "The operative is overheating in hostile temperature conditions.",
+      "statMods": { "intellect": -5, "combat": -5, "body": -5 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -5 },
+        { "skill": "Tech (Mechanical)", "value": -5 },
+        { "skill": "Medical", "value": -5 }
+      ]
+    },
+    {
+      "name": "Frightened",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/frightened.png",
+      "severity": 1,
+      "effectSummary": "Fear control slips and aggression becomes unreliable.",
+      "severityScale": "Each untreated level further erodes nerve and tactical resolve.",
+      "treatment": "Reassurance, sedation, command stabilisation, distance from trigger.",
+      "description": "The operative is actively rattled by a threat and struggling to stay steady.",
+      "statMods": { "combat": -10, "fear": -10 },
+      "skillMods": [
+        { "skill": "Command", "value": -10 }
+      ]
+    },
+    {
+      "name": "Hallucinations",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/loss_of_confidence.png",
+      "severity": 1,
+      "effectSummary": "Perception and judgement become unreliable.",
+      "severityScale": "Each untreated level worsens sensory confusion and bad calls.",
+      "treatment": "Sedation, medical intervention, rest, remove toxins or trigger.",
+      "description": "The operative cannot fully trust what they see, hear, or infer.",
+      "statMods": { "intellect": -10 },
+      "skillMods": [
+        { "skill": "Spot Hidden", "value": -10 },
+        { "skill": "Listen", "value": -10 },
+        { "skill": "Tactics", "value": -5 }
+      ]
+    },
+    {
+      "name": "Haunted",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/haunted.png",
+      "severity": 1,
+      "effectSummary": "Recurring dread bleeds into calm judgement and fear resistance.",
+      "severityScale": "Each untreated level intensifies intrusive thoughts and fear bleed-through.",
+      "treatment": "Therapy, ritual closure, proper sleep, medication, protected downtime.",
+      "description": "The operative is stalked by memories, echoes, or lingering terror.",
+      "statMods": { "sanity": -5, "fear": -5 },
+      "skillMods": []
+    },
+    {
+      "name": "Hypervigilance",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/hypervigilance.png",
+      "severity": 1,
+      "effectSummary": "Sharper scanning comes at the cost of social ease and calm.",
+      "severityScale": "Each untreated level sharpens detection but worsens social tension.",
+      "treatment": "Rest, reassurance, proper sleep, rotation off watch, medication.",
+      "description": "The operative is keyed-up and sees every shadow as a threat.",
+      "statMods": {},
+      "skillMods": [
+        { "skill": "Spot Hidden", "value": 5 },
+        { "skill": "Listen", "value": 5 },
+        { "skill": "Persuade", "value": -5 },
+        { "skill": "Fast Talk", "value": -5 }
+      ]
+    },
+    {
+      "name": "Irradiated",
+      "category": "Environmental",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/irradiated.png",
+      "severity": 1,
+      "effectSummary": "Radiation poisoning attacks stamina and resilience.",
+      "severityScale": "Each untreated level worsens sickness, weakness, and bodily failure.",
+      "treatment": "Rad purge, chems, shielding, detox, medical monitoring.",
+      "description": "The operative has absorbed enough radiation to begin deteriorating.",
+      "statMods": { "body": -10, "strength": -5 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -5 }
+      ]
+    },
+    {
+      "name": "Loss of Confidence",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/loss_of_confidence.png",
+      "severity": 1,
+      "effectSummary": "The operative second-guesses themselves at the worst moment.",
+      "severityScale": "Each untreated level deepens hesitation and poor authority projection.",
+      "treatment": "Reassurance, training, recovery, command support, success under pressure.",
+      "description": "Self-belief is eroding and assertive action is harder to sustain.",
+      "statMods": { "combat": -10 },
+      "skillMods": [
+        { "skill": "Command", "value": -10 },
+        { "skill": "Persuade", "value": -5 },
+        { "skill": "Intimidate", "value": -5 }
+      ]
+    },
+    {
+      "name": "Nightmares",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/nightmares.png",
+      "severity": 1,
+      "effectSummary": "Poor sleep leaves the operative drained and frayed.",
+      "severityScale": "Each untreated level further erodes recovery and fear resistance.",
+      "treatment": "Sleep, sedation, therapy, safer quarters, monitored rest.",
+      "description": "Rest is disturbed by vivid recurring trauma or dread imagery.",
+      "statMods": { "sanity": -5, "fear": -5, "speed": -5 },
+      "skillMods": []
+    },
+    {
+      "name": "Panicky",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/distress.png",
+      "severity": 1,
+      "effectSummary": "Fear spikes fast and action discipline suffers.",
+      "severityScale": "Each untreated level makes panic responses harder to contain.",
+      "treatment": "Breathing control, sedation, command support, remove from trigger.",
+      "description": "The operative is already teetering on the edge of a panic response.",
+      "statMods": { "fear": -10, "combat": -5 },
+      "skillMods": []
+    },
+    {
+      "name": "Phobia",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/frightened.png",
+      "severity": 1,
+      "effectSummary": "A specific trigger collapses nerve and movement control.",
+      "severityScale": "Each untreated level intensifies the triggered fear spiral.",
+      "treatment": "Therapy, controlled exposure, sedation, distance from trigger.",
+      "description": "The operative carries a specific overwhelming fear response.",
+      "statMods": { "fear": -10, "combat": -5, "speed": -5 },
+      "skillMods": []
+    },
+    {
+      "name": "Severe Anxiety",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/anxiety.png",
+      "severity": 1,
+      "effectSummary": "Every decision comes under pressure and dread.",
+      "severityScale": "Each untreated level further erodes concentration and control.",
+      "treatment": "Sedation, therapy, reassurance, reduced exposure to pressure.",
+      "description": "The operative is locked in a persistent high-anxiety state.",
+      "statMods": { "fear": -10, "intellect": -5 },
+      "skillMods": [
+        { "skill": "Command", "value": -5 }
+      ]
+    },
+    {
+      "name": "Social Anxiety",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/anxiety.png",
+      "severity": 1,
+      "effectSummary": "Communication under pressure becomes difficult and strained.",
+      "severityScale": "Each untreated level worsens hesitation and social friction.",
+      "treatment": "Therapy, coaching, medication, low-pressure recovery time.",
+      "description": "The operative struggles to perform in direct social or command exchanges.",
+      "statMods": {},
+      "skillMods": [
+        { "skill": "Persuade", "value": -10 },
+        { "skill": "Fast Talk", "value": -10 },
+        { "skill": "Command", "value": -10 },
+        { "skill": "Intimidate", "value": -10 }
+      ]
+    },
+    {
+      "name": "Starving",
+      "category": "Physical",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/starving.png",
+      "severity": 1,
+      "effectSummary": "Lack of food and water drains bodily reserves and performance.",
+      "severityScale": "Each untreated level worsens weakness, collapse risk, and poor endurance.",
+      "treatment": "Food, water, electrolytes, rest, monitored recovery.",
+      "description": "The operative is underfed, dehydrated, or metabolically depleted.",
+      "statMods": { "strength": -10, "body": -10, "speed": -5 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -10 },
+        { "skill": "Climb", "value": -10 },
+        { "skill": "Swim", "value": -10 }
+      ]
+    },
+    {
+      "name": "Suffocating",
+      "category": "Environmental",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/suffocating.png",
+      "severity": 1,
+      "effectSummary": "Oxygen loss or choking destroys mental and physical performance.",
+      "severityScale": "Each untreated level rapidly worsens every roll tied to survival.",
+      "treatment": "Restore air, clear airway, re-pressurise, oxygen mask, evac.",
+      "description": "The operative is being starved of oxygen or cannot breathe properly.",
+      "statMods": { "strength": -10, "speed": -10, "intellect": -10, "combat": -10, "body": -10 },
+      "skillMods": []
+    },
+    {
+      "name": "The Bends",
+      "category": "Physical",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/the_bends.png",
+      "severity": 1,
+      "effectSummary": "Pressure trauma punishes movement, stability, and endurance.",
+      "severityScale": "Each untreated level worsens pain, weakness, and collapse risk.",
+      "treatment": "Recompression, oxygen, medical supervision, controlled rest.",
+      "description": "The operative is suffering from decompression sickness.",
+      "statMods": { "speed": -10, "body": -10, "combat": -5 },
+      "skillMods": [
+        { "skill": "Athletics", "value": -10 },
+        { "skill": "Dodge", "value": -5 }
+      ]
+    },
+    {
+      "name": "The Shakes",
+      "category": "Physical",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/the_shakes.png",
+      "severity": 1,
+      "effectSummary": "Fine motor control is unreliable, especially under pressure.",
+      "severityScale": "Each untreated level worsens aim and precision work.",
+      "treatment": "Medication, rest, stabilisers, warmth, treat underlying cause.",
+      "description": "The operative cannot keep their hands steady enough for precise work.",
+      "statMods": {},
+      "skillMods": [
+        { "skill": "Firearm (Pistol)", "value": -10 },
+        { "skill": "Firearm (Rifle/Shotgun)", "value": -10 },
+        { "skill": "Firearm (SMG)", "value": -10 },
+        { "skill": "Firearm (Auto/Support)", "value": -10 },
+        { "skill": "Medical", "value": -10 },
+        { "skill": "Tech (Electronics)", "value": -10 },
+        { "skill": "Tech (Mechanical)", "value": -10 }
+      ]
+    },
+    {
+      "name": "Toxic Atmosphere",
+      "category": "Environmental",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/toxic_atmosphere.png",
+      "severity": 1,
+      "effectSummary": "Toxins attack endurance, balance, and breathing efficiency.",
+      "severityScale": "Each untreated level compounds sickness and bodily failure.",
+      "treatment": "Respirator, evac, anti-toxin, purge, sealed environment.",
+      "description": "The operative is exposed to a poisonous or unbreathable environment.",
+      "statMods": { "body": -10, "speed": -10 },
+      "skillMods": []
+    },
+    {
+      "name": "Twitchy",
+      "category": "Psychological",
+      "img": "systems/sla-mothership/images/icons/ui/conditions/the_shakes.png",
+      "severity": 1,
+      "effectSummary": "Jumpy reflexes ruin patience, stealth, and delicate control.",
+      "severityScale": "Each untreated level makes quiet or precise work harder.",
+      "treatment": "Rest, calming meds, decompression, squad reassurance.",
+      "description": "The operative keeps flinching, jerking, and overreacting to stimuli.",
+      "statMods": {},
+      "skillMods": [
+        { "skill": "Stealth", "value": -10 },
+        { "skill": "Dodge", "value": -5 },
+        { "skill": "Medical", "value": -5 },
+        { "skill": "Tech (Mechanical)", "value": -5 }
+      ]
+    }
+  ]
+}

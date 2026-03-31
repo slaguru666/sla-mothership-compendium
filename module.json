@@ -1,0 +1,40 @@
+{
+  "id": "sla-mothership-compendium",
+  "title": "SLA Mothership Companion",
+  "description": "Seeds SLA Industries weapons, armour, gear, training references, species notes, skills, Ebb abilities, and SLA panic tables into SLA Mothership worlds.",
+  "version": "0.5.1",
+  "url": "https://github.com/slaguru666/sla_industries_MS",
+  "manifest": "https://raw.githubusercontent.com/slaguru666/sla-mothership-compendium/main/module.json",
+  "download": "https://github.com/slaguru666/sla-mothership-compendium/releases/latest/download/sla-mothership-compendium.zip",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.350",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Tim Evans",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/sla-mothership-compendium.mjs"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "sla-mothership",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ]
+}
