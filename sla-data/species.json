@@ -7,7 +7,10 @@
       "startingScl": 10,
       "starterPackage": "Strike Squad",
       "choiceBonuses": [
-        { "count": 3, "bonus": 10 }
+        {
+          "count": 3,
+          "bonus": 10
+        }
       ],
       "identity": "Adaptable generalists. No racial extremes; their edge is flexibility and social access to SLA's systems.",
       "fieldPressure": "Humans are expected to fill doctrine gaps, improvise, and absorb sponsor demands without complaint.",
@@ -39,10 +42,22 @@
       "startingScl": 10,
       "starterPackage": "Kick Murder",
       "skillBonuses": [
-        { "skillRef": "Melee Blade 2H", "bonus": 20 },
-        { "skillRef": "Brawl", "bonus": 20 },
-        { "skillRef": "Athletics", "bonus": 20 },
-        { "skillRef": "Intimidate", "bonus": 10 }
+        {
+          "skillRef": "Melee Blade 2H",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Brawl",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Athletics",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Intimidate",
+          "bonus": 10
+        }
       ],
       "identity": "Clan-human berserkers born with a physiological gift for combat drugs, violence, and recovery.",
       "fieldPressure": "Keep them pointed at the problem and away from delicate evidence chains or sponsor-facing civilians.",
@@ -81,10 +96,22 @@
       "startingScl": 10,
       "starterPackage": "Ebb Operative",
       "skillBonuses": [
-        { "skillRef": "Biofeedback", "bonus": 20 },
-        { "skillRef": "Formulate", "bonus": 20 },
-        { "skillRef": "Medical", "bonus": 10 },
-        { "skillRef": "Psychology", "bonus": 10 }
+        {
+          "skillRef": "Biofeedback",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Formulate",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Medical",
+          "bonus": 10
+        },
+        {
+          "skillRef": "Psychology",
+          "bonus": 10
+        }
       ],
       "identity": "Mystical, emotionally volatile Ebb users whose greatest strength is disciplined mental focus rather than physical resilience.",
       "fieldPressure": "They are trusted when the mission needs calm precision, but every Flux spike is watched and every psychic event hits them harder.",
@@ -123,10 +150,22 @@
       "startingScl": 10,
       "starterPackage": "Ebb Operative",
       "skillBonuses": [
-        { "skillRef": "Formulate", "bonus": 20 },
-        { "skillRef": "Biofeedback", "bonus": 10 },
-        { "skillRef": "Intimidate", "bonus": 10 },
-        { "skillRef": "Firearm (Rifle/Shotgun)", "bonus": 10 }
+        {
+          "skillRef": "Formulate",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Biofeedback",
+          "bonus": 10
+        },
+        {
+          "skillRef": "Intimidate",
+          "bonus": 10
+        },
+        {
+          "skillRef": "Firearm (Rifle/Shotgun)",
+          "bonus": 10
+        }
       ],
       "identity": "Violent evolutionary offshoots of the Ebon; hateful, aggressive Ebb users who are more dangerous in a fight than in a briefing room.",
       "fieldPressure": "Command expects results fast, but collateral panic and the psychic shockwave around them are never far behind.",
@@ -165,10 +204,22 @@
       "startingScl": 10,
       "starterPackage": "Scouting",
       "skillBonuses": [
-        { "skillRef": "Athletics", "bonus": 20 },
-        { "skillRef": "Dodge", "bonus": 20 },
-        { "skillRef": "Spot Hidden", "bonus": 20 },
-        { "skillRef": "Firearm (Rifle/Shotgun)", "bonus": 10 }
+        {
+          "skillRef": "Athletics",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Dodge",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Spot Hidden",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Firearm (Rifle/Shotgun)",
+          "bonus": 10
+        }
       ],
       "identity": "Feline ice-world hunters with lightning reflexes, superior senses, and the fastest natural movement profile in the World of Progress.",
       "fieldPressure": "Use them for pursuit, flank work, and live target acquisition before a scene turns static or heavily scripted.",
@@ -207,10 +258,22 @@
       "startingScl": 10,
       "starterPackage": "Death Squad",
       "skillBonuses": [
-        { "skillRef": "Melee Blade 2H", "bonus": 20 },
-        { "skillRef": "Tactics", "bonus": 20 },
-        { "skillRef": "Command", "bonus": 10 },
-        { "skillRef": "SLA Info", "bonus": 10 }
+        {
+          "skillRef": "Melee Blade 2H",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Tactics",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Command",
+          "bonus": 10
+        },
+        {
+          "skillRef": "SLA Info",
+          "bonus": 10
+        }
       ],
       "identity": "Saurian warriors of honour and martial tradition, combining brutal strength with disciplined battlefield intent.",
       "fieldPressure": "Doctrine has to respect their code or the squad risks discipline fractures at the worst possible time.",
@@ -249,11 +312,26 @@
       "startingScl": 10,
       "starterPackage": "Death Squad",
       "skillBonuses": [
-        { "skillRef": "Brawl", "bonus": 20 },
-        { "skillRef": "Melee Axe", "bonus": 20 },
-        { "skillRef": "Firearm (Auto/Support)", "bonus": 20 },
-        { "skillRef": "Persuade", "bonus": -10 },
-        { "skillRef": "Fast Talk", "bonus": -10 }
+        {
+          "skillRef": "Brawl",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Melee Axe",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Firearm (Auto/Support)",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Persuade",
+          "bonus": -10
+        },
+        {
+          "skillRef": "Fast Talk",
+          "bonus": -10
+        }
       ],
       "identity": "Karma's standard biogenetic combat unit: a massive regenerating killing machine with overwhelming power and minimal subtlety.",
       "fieldPressure": "They solve breaches, riots, and hard resistance, but subtlety evaporates the moment they become the main plan.",
@@ -299,10 +377,22 @@
       "startingScl": 10,
       "starterPackage": "Scouting",
       "skillBonuses": [
-        { "skillRef": "Athletics", "bonus": 20 },
-        { "skillRef": "Dodge", "bonus": 20 },
-        { "skillRef": "Firearm (SMG)", "bonus": 20 },
-        { "skillRef": "Streetwise", "bonus": 10 }
+        {
+          "skillRef": "Athletics",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Dodge",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Firearm (SMG)",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Streetwise",
+          "bonus": 10
+        }
       ],
       "identity": "Karma's fast insectile camouflage unit: a stealth biogen built for pursuit, ambush, and pressure from impossible angles.",
       "fieldPressure": "Best used where speed and feral pressure matter more than conversation, procedure, or sponsor optics.",
@@ -348,11 +438,26 @@
       "startingScl": 10,
       "starterPackage": "Tech Ops",
       "skillBonuses": [
-        { "skillRef": "Brawl", "bonus": 20 },
-        { "skillRef": "Melee Axe", "bonus": 20 },
-        { "skillRef": "Streetwise", "bonus": 20 },
-        { "skillRef": "Persuade", "bonus": -10 },
-        { "skillRef": "Command", "bonus": -10 }
+        {
+          "skillRef": "Brawl",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Melee Axe",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Streetwise",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Persuade",
+          "bonus": -10
+        },
+        {
+          "skillRef": "Command",
+          "bonus": -10
+        }
       ],
       "identity": "Cunning survivor-mutants with strong instincts and an uneasy fit inside official SLA structures.",
       "fieldPressure": "They thrive in broken districts and dirty jobs, but prejudice follows them into every briefing room.",
@@ -375,6 +480,99 @@
           "label": "Social Prejudice",
           "summary": "Track district or sponsor prejudice penalties where relevant.",
           "optional": true,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Stormer Vevaphon",
+      "startingScl": 10,
+      "starterPackage": "Strike Squad",
+      "skillBonuses": [
+        {
+          "skillRef": "Stealth",
+          "bonus": 20
+        },
+        {
+          "skillRef": "Brawl",
+          "bonus": 15
+        },
+        {
+          "skillRef": "Disguise",
+          "bonus": 15
+        },
+        {
+          "skillRef": "Climb",
+          "bonus": 10
+        },
+        {
+          "skillRef": "Persuade",
+          "bonus": -10
+        },
+        {
+          "skillRef": "SLA Info",
+          "bonus": -10
+        }
+      ],
+      "identity": "Sleight Industries' cancelled polymorphic Stormer line. A shape-shifting bioweapon that can be anything the mission needs \u2014 and that is precisely the problem.",
+      "fieldPressure": "Vevaphons excel in infiltration, close-quarters ambushes, and adaptable shock roles, but their psychological fragility makes long missions a liability; every form change erodes who they think they are.",
+      "mothershipStats": {
+        "strength": "2d10+35",
+        "speed": "2d10+28",
+        "intellect": "2d10+20",
+        "combat": "2d10+35",
+        "sanity": "2d10+12",
+        "fear": "2d10+23",
+        "body": "2d10+22",
+        "health": "1d10+12"
+      },
+      "mothershipDescription": "Strong, fast, and physically resilient biogenetic platform with severely degraded Sanity reflecting identity diffusion and psychological instability from continuous polymorphic reprogramming.",
+      "notes": [
+        "Minimum 3 Wound slots (amorphous body redistributes trauma across the matrix).",
+        "Immune to bleeding and bone fractures; vulnerable to fire, extreme heat, and corrosives (double damage).",
+        "Cannot be identified by standard biometrics while in an altered form \u2014 only deep forensic scanning reveals Vevaphon DNA."
+      ],
+      "specialRules": [
+        {
+          "key": "polymorphicBody",
+          "label": "Polymorphic Body",
+          "summary": "May reconfigure as an action. Choose Brute Form (+5 melee damage, +2 Armour, -5 Speed, Disadvantage on Stealth), Stalker Form (Advantage on Stealth, can squeeze through tight spaces, -2 Armour), or Raptor Form (+8 Speed, extended melee reach, Vulnerability to fire/corrosives). Each form change triggers a Sanity save; on failure gain 1 Instability.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "adaptivePhysiology",
+          "label": "Adaptive Physiology",
+          "summary": "When taking physical damage, may choose to shed mass: reduce incoming damage by 1d5, but lose 3 Strength temporarily until next rest. Immune to bleeding and broken bones. Double damage from fire, extreme heat, and corrosive attacks.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "fluidIdentity",
+          "label": "Fluid Identity",
+          "summary": "Advantage on Disguise/Deception when impersonating someone studied for at least one scene. Deep scans always reveal Vevaphon origin. Long-term impersonations (more than one session) generate 1 Stress per session.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "vevaphonInstability",
+          "label": "Psychological Instability",
+          "summary": "Track Instability separately (0-12). At 3+ suffer Disadvantage on social Intellect checks. At 6+ roll on Minor Morph Panic table at combat start. At 9+ failed Sanity saves trigger the Vevaphon Morph Panic table instead of standard Panic.",
+          "optional": false,
+          "default": true
+        },
+        {
+          "key": "corporateLeash",
+          "label": "Corporate Asset / Liability",
+          "summary": "At creation choose On the Leash (better gear, Sleight can recall/track/sabotage) or Off the Grid (burnt serial; Hunter Sheet active from session 1, no corporate strings).",
+          "optional": true,
+          "default": false
+        },
+        {
+          "key": "sleightLineDefect",
+          "label": "Cancelled Line Defect",
+          "summary": "The Vevaphon programme was quietly purged. You do not officially exist. SLA systems flag your DNA as pending recall if scanned. Karma and Sleight treat you as a liability.",
+          "optional": false,
           "default": true
         }
       ]
