@@ -357,6 +357,7 @@ function buildSkill(entry, folder, iconMap) {
         ${attributeTags.length ? `<p><strong>Stat use:</strong> ${attributeTags.join(", ")}.</p>` : ""}
         ${entry.combat ? "<p><strong>Use:</strong> Combat-linked skill. Roll it when the attack, defence, or violent action maps to this discipline.</p>" : ""}
         ${ebbOnly ? "<p><strong>Restriction:</strong> Ebb-only discipline. Remove it from non-Ebon and non-Brain Waster operatives.</p>" : ""}
+        ${entry.notes ? entry.notes.split(/\n+/).map(line => `<p>${line.trim()}</p>`).join("") : ""}
       `,
       rank: "SLA",
       bonus: Number(entry.base ?? 0),

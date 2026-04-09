@@ -34,6 +34,13 @@
     { "name": "Swim", "base": 20, "categoryRef": "Physical", "attributes": ["strength", "speed"] },
     { "name": "Dodge", "base": 15, "categoryRef": "Physical", "attributes": ["speed"] },
     { "name": "Stealth", "base": 10, "categoryRef": "Physical", "attributes": ["speed"] },
+    {
+      "name": "Disguise",
+      "base": 10,
+      "categoryRef": "Physical",
+      "attributes": ["speed"],
+      "notes": "Used to alter a character's visible appearance through cosmetics, prosthetics, surface tissue manipulation (for biogenetic species), clothing, and movement coaching. Cannot change fundamental physical dimensions — height, body mass, bone structure, and limb length cannot be disguised. What it CAN change: skin tone and texture, hair colour and style, apparent age, facial features (nose shape, jaw line, brow), visible markings and scarring, and species-surface tells on biogenetic characters.\n\nTrained (bonus 10–14): Convincing against casual observers and brief encounters. A Spot Hidden roll from an observer who has met the target before will reveal the disguise on a success. Add +10 to any observer's Spot Hidden if they know the person being impersonated.\n\nMaster (bonus 20+): The disguise holds under close scrutiny and extended social interaction. Observers require a critical success on Spot Hidden to see through it. Can convincingly replicate a specific named individual's features well enough to fool colleagues and security systems that rely on visual identification."
+    },
 
     { "name": "Brawl", "base": 25, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
     { "name": "Melee Blade 1H", "base": 20, "categoryRef": "Combat", "combat": true, "attributes": ["combat", "strength"] },
