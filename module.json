@@ -8,8 +8,8 @@
   "download": "https://github.com/slaguru666/sla-mothership-compendium/releases/latest/download/sla-mothership-compendium.zip",
   "compatibility": {
     "minimum": "13",
-    "verified": "13.350",
-    "maximum": "13"
+    "verified": "14",
+    "maximum": "14"
   },
   "authors": [
     {
